@@ -6,5 +6,16 @@
 
     "Homepage":{
       "hello":"MERHABA"
-    }
+    },
+
+    "Reservation":{
+  "text":"Hayalinizdeki Tatili Şimdiden Ayırtın!",
+  "checkin":"Giriş",
+  "checkout":"Çıkış",
+  "guests":"Misafirler",
+   "search":"Ara",
+   "adult":"Yetişkin",
+   "children":"Çocuk"
+
+}
 }

@@ -6,5 +6,15 @@
 
     "Homepage":{
       "hello":"HELLO DE"
+    },
+
+    "Reservation": {
+      "text": "Buchen Sie Ihren Traumaufenthalt",
+      "checkin": "Check-in",
+      "checkout": "Check-out",
+      "guests": "Gäste",
+      "search": "Suchen",
+      "adult":"Erwachsene",
+      "children":"Kind(er)"
     }
 }

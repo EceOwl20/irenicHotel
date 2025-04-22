@@ -6,5 +6,16 @@
 
   "Homepage":{
     "hello":"HELLO"
-  }
+  },
+
+  "Reservation":{
+  "text":"Book Your Dream Stay",
+  "checkin":"Check In",
+  "checkout":"Check Out",
+  "guests":"Guests",
+   "search":"BOOK NOW",
+   "adult":"Adult",
+   "children":"Children"
+
+}
 }

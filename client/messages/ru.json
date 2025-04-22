@@ -6,5 +6,16 @@
 
     "Homepage":{
       "hello":"HELLO RU"
+    },
+    
+    "Reservation": {
+      "text": " Забронируйте отдых своей мечты",
+      "checkin": "Заезд",
+      "checkout": "Выезд",
+      "guests": "Гости",
+      "search": "Поиск",
+      "adult":"Взрослые",
+      "children":"Дети"
     }
+    
 }
