@@ -33,18 +33,18 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }) 
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-darkB uppercase w-full text-[16px]">
+        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent uppercase w-full text-[14px] font-montserrat">
         {defaultValue}
       </button>
       {isOpen && (
-        <div className="absolute z-50 mt-0 rounded bg-darkB shadow-lg left-2 w-full ">
+        <div className="absolute z-50 mt-0 rounded bg-irenicBlack shadow-lg left-0 w-full ">
           <ul className="py-0">
             {React.Children.map(children, (child) => {
               if (child.props.value === defaultValue) return null;
               return (
                 <li
                   key={child.props.value}
-                  className="cursor-pointer px-[6px] py-[8px] mt-0 hover:bg-white hover:text-lagoBlack text-center items-center justify-center"
+                  className="cursor-pointer px-[6px] py-[8px] mt-0 hover:bg-white hover:text-irenicBlack text-center items-center justify-center uppercase"
                   onClick={() => handleLangChange(child.props.value)}
                 >
                   {child.props.value}

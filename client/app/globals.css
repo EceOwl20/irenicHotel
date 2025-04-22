@@ -1,3 +1,44 @@
 @import "tailwindcss";
 
 
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .font-heebo {
+    font-family: 'Heebo', sans-serif;
+  }
+
+
+  .text-irenicOrange {
+    color:  rgb(255, 162, 23); 
+  
+  }
+
+  .text-irenicBlack {
+    color:  rgb(15, 23, 43); 
+  
+  }
+
+  .bg-irenicBlack {
+    background-color: rgb(15, 23, 43);
+  }
+
+  .bg-irenicOrange {
+    background-color:  rgb(255, 162, 23); 
+  
+  }
+  
+
+  .text-irenicGray {
+    color:    rgb(102, 101, 101); 
+  
+  }
+
+
+  h2 {
+    text-shadow:
+      1px 1px 0px rgba(0,0,0,0.2),
+      2px 2px 0px rgba(0,0,0,0.15),
+      3px 3px 0px rgba(0,0,0,0.1);
+  }

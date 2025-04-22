@@ -1,18 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Heebo, Montserrat, Roboto } from 'next/font/google'
 import "../globals.css";
 import {NextIntlClientProvider, Locale, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
+import Header from './generalComponents/Header';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const heebo = Heebo({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Irenic Hotel",
@@ -28,9 +31,10 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${heebo.variable} antialiased`}
       >
           <NextIntlClientProvider>
+            <Header/>
         {children}
         </NextIntlClientProvider>
       </body>
