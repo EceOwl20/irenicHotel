@@ -1,0 +1,10 @@
+{
+    "LocaleSwitcher": {
+      "label": "Изменить язык",
+      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Неизвестный}}"
+    },
+
+    "Homepage":{
+      "hello":"HELLO RU"
+    }
+}
