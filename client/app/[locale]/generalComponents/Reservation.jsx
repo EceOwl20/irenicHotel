@@ -37,6 +37,7 @@ export default function Reservation() {
   return (
     <section
       className="
+      max-w-screen
         hidden
         md:flex
         absolute 
