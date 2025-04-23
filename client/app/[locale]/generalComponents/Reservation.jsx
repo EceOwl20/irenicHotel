@@ -48,7 +48,7 @@ export default function Reservation() {
         z-20 
         items-center 
         justify-center
-        bg-[#1D1D1B] 
+        bg-irenicBlack
         bg-opacity-50
       "
       aria-labelledby="reservation-heading"
