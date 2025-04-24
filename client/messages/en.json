@@ -5,7 +5,30 @@
   },
 
   "Homepage":{
-    "hello":"HELLO"
+    "hello":"HELLO",
+    "infoSection": {
+    "subtitle": "About Us",
+    "heading": "Welcome to IRENIC HOTEL",
+    "text": "An unforgettable holiday experience awaits you at our luxury hotel on Antalya Konyaaltı Beach! This unique location within walking distance to the sea offers the perfect opportunity for the most enjoyable vacation of your life."
+  },
+  "slidingSections": {
+    "first": {
+      "title": "Deluxe Single Room",
+      "text": "Compact 10 m² Deluxe Single Room with one single bed and essential amenities, ideal for solo travelers seeking comfort.",
+      "button": "CHECK AVAILABILITY"
+    },
+    "second": {
+      "title": "Jacuzzi Suite",
+      "text": "Luxurious 30 m² Jacuzzi Suite with a double bed, private jacuzzi, and premium amenities for an indulgent experience.",
+      "button": "CHECK AVAILABILITY"
+    }
+  },
+  "gridSection": {
+    "label1": "Rooms",
+    "label2": "Restaurant",
+    "label3": "Pool",
+    "label4": "Lobby Bar"
+  }
   },
 
   "Reservation":{

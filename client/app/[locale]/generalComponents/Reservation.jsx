@@ -41,7 +41,7 @@ export default function Reservation() {
         hidden
         md:flex
         absolute 
-        bottom-[20%]  
+        bottom-[10%]  
        left-[50%]
        -translate-x-[50%]
         w-[80%] 

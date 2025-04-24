@@ -5,7 +5,31 @@
     },
 
     "Homepage":{
-      "hello":"MERHABA"
+      "hello":"MERHABA",
+
+      "infoSection": {
+        "subtitle": "Hakkımızda",
+        "heading": "IRENIC HOTEL'e Hoş Geldiniz",
+        "text": "Antalya Konyaaltı Sahili'nde yer alan lüks otelimizde unutulmaz bir tatil deneyimi sizi bekliyor! Denize yürüme mesafesindeki bu benzersiz konum, hayatınızın en keyifli tatilini yaşamanız için mükemmel bir fırsat sunuyor."
+      },
+      "slidingSections": {
+        "first": {
+          "title": "Deluxe Single Oda",
+          "text": "Kompakt 10 m² Deluxe Single Oda; tek kişilik yatak ve temel konfor öğeleriyle ideal solo konaklama.",
+          "button": "MÜSAİTLİK KONTROLÜ"
+        },
+        "second": {
+          "title": "Jacuzzi Süit",
+          "text": "Lüks 30 m² Jacuzzi Süit; çift kişilik yatak, özel jakuzili banyo ve premium donanımlar.",
+          "button": "MÜSAİTLİK KONTROLÜ"
+        }
+      },
+      "gridSection": {
+        "label1": "Odalar",
+        "label2": "Restoran",
+        "label3": "Sahil ve Havuz",
+        "label4": "Lobi Bar"
+      }
     },
 
     "Reservation":{
