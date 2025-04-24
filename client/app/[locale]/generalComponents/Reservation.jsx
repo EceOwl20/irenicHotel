@@ -37,20 +37,21 @@ export default function Reservation() {
   return (
     <section
       className="
-      max-w-screen
+      max-w-[1100px]
         hidden
         md:flex
         absolute 
-        bottom-0  
-        left-0 
-        right-0
-        w-screen 
+        bottom-[20%]  
+       left-[50%]
+       -translate-x-[50%]
+        w-[80%] 
         h-auto 
         z-20 
         items-center 
         justify-center
-        bg-irenicBlack
+        bg-[#0F172B]/70
         bg-opacity-50
+        py-4
       "
       aria-labelledby="reservation-heading"
     >
@@ -63,17 +64,15 @@ export default function Reservation() {
           items-center 
           h-auto
           max-h-content
-          justify-center 
+          justify-around 
           text-[#ffffff] 
-          font-jost 
+          font-heebo 
           leading-normal 
-          text-center
-          gap-[40px]
-          lg:gap-[50px]
-        "
+          text-center "
       >
         {/* CHECK-IN */}
-        <div className="relative flex items-center justify-center w-auto ">
+        <div className="relative flex items-center justify-center w-auto border border-white/50 py-[10px] 
+              px-[20px]">
           <label htmlFor="checkInDate" className="sr-only text-white">
             {t("checkin")}
           </label>
@@ -84,31 +83,29 @@ export default function Reservation() {
             placeholderText={t("checkin")}
             className="
               cursor-pointer 
-              py-[30px] 
               lg:w-auto 
               text-customGray 
               focus:outline-none 
               bg-transparent 
-              text-center 
+              text-start 
               placeholder:text-white
               placeholder:uppercase
-              placeholder:text-[16px]
+              placeholder:text-[14px]
               placeholder:leading-[24px]
               placeholder:font-medium
-              placeholder:font-jost
-            "
+              placeholder:font-heebo
+               max-w-[140px]
+              "
             popperPlacement="bottom-start"
             calendarClassName="custom-calendar"
             dayClassName={() => "custom-day hover:bg-blue-100 focus:outline-none"}
           />
-          <IoIosArrowDown className="absolute right-[10px]" width={12} height={12} />
+          <IoIosArrowDown className="flex" width={12} height={12} />
         </div>
 
-        {/* İnce çizgi */}
-        <div className="w-[1px] h-[11px] bg-white" />
-
         {/* CHECK-OUT */}
-        <div className="relative flex items-center justify-center w-auto ">
+        <div className="relative flex items-center justify-start w-auto border border-white/50  py-[10px] 
+              px-[20px]">
           <label htmlFor="checkOutDate" className="sr-only">
             {t("checkout")}
           </label>
@@ -119,74 +116,74 @@ export default function Reservation() {
             placeholderText={t("checkout")}
             className="
               cursor-pointer 
-              py-[30px] 
               text-customGray 
               focus:outline-none 
               bg-transparent 
-              text-center 
+              text-start 
               placeholder:text-white
               placeholder:uppercase
-              placeholder:text-[16px]
+              placeholder:text-[14px]
               placeholder:leading-[24px]
               placeholder:font-medium
-              placeholder:font-jost
+              placeholder:font-heebo
+              max-w-[140px]
             "
             popperPlacement="bottom-start"
             calendarClassName="custom-calendar"
             dayClassName={() => "custom-day hover:bg-blue-100 focus:outline-none"}
           />
-          <IoIosArrowDown className="absolute right-[3px]" width={12} height={12} />
+          <IoIosArrowDown className="flex" width={12} height={12} />
         </div>
 
-        {/* İnce çizgi */}
-        <div className="w-[1px] h-[11px] bg-white " />
 
         {/* ADULTS */}
-        <div className="relative flex items-center justify-center w-auto">
+        <div className="relative flex items-center justify-center w-auto ">
           <button
             id="adults-button"
             onClick={toggleAdults}
             className="
               flex
               items-center justify-center
-              py-[30px] 
+              py-[10px] 
+              px-[20px]
               w-full 
               text-customGray
               bg-transparent
               focus:outline-none
-              text-center
+              text-start
               uppercase
-              text-[16px]
+              text-[14px]
               leading-[24px]
               font-medium
-              font-jost
+              font-heebo
+              border
+              border-white/50
+            
             "
             aria-haspopup="dialog"
             aria-expanded={showAdults}
             type="button"
           >
             {t("adult")}
-            <IoIosArrowDown className="flex ml-[13px]" width={12} height={12} />
+            <IoIosArrowDown className="flex ml-[16px]" width={12} height={12} />
           </button>
           {showAdults && (
             <div
               className="
                 absolute 
-                bottom-full 
-                -left-1/2 
+                -bottom-[136%] 
+                left-1/2 
+                -translate-x-1/2
                 mt-2 
-                bg-transparent 
-                border 
-                border-gray-300 
+                bg-[#0F172B]/70
                 text-[#ffff] 
                 text-[14px] 
                 font-semibold 
-                rounded-lg 
                 shadow-lg 
                 w-full 
                 min-w-[180px] 
                 p-3 
-                xl:p-4
+                xl:p-2
               "
               role="dialog"
             >
@@ -244,8 +241,6 @@ export default function Reservation() {
           )}
         </div>
 
-        {/* İnce çizgi */}
-        <div className="w-[1px] h-[11px] bg-white " />
 
         {/* CHILDREN */}
         <div className="relative flex items-center justify-center w-auto">
@@ -255,17 +250,20 @@ export default function Reservation() {
             className="
               flex
               items-center justify-center
-              py-[30px] 
+              py-[10px] 
+              px-[20px]
               w-full 
               text-customGray
               bg-transparent
               focus:outline-none
               text-center
               uppercase
-              text-[16px]
+              text-[14px]
               leading-[24px]
               font-medium
-              font-jost
+              font-heebo
+               border
+               border-white/50
             "
             aria-haspopup="dialog"
             aria-expanded={showChildren}
@@ -278,16 +276,14 @@ export default function Reservation() {
             <div
               className="
                 absolute 
-                bottom-full 
-                -left-1/2 
+                bg-[#0F172B]/70
+                -bottom-[128%]
+                 left-1/2 
+                -translate-x-1/2
                 mt-2 
-                bg-transparent 
-                border 
-                border-gray-300 
                 text-[#ffff] 
                 text-[14px] 
                 font-semibold 
-                rounded-lg 
                 shadow-lg 
                 w-full 
                 min-w-[180px] 
@@ -364,7 +360,7 @@ export default function Reservation() {
               text-[13px]
               font-medium
               uppercase
-              font-jost
+              font-heebo
               text-center 
               justify-center
               items-center
