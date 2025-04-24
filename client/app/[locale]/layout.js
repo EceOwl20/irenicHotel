@@ -4,7 +4,6 @@ import {NextIntlClientProvider, Locale, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from './generalComponents/Header';
-import "remixicon/fonts/remixicon.css";
 import Footer from './generalComponents/Footer';
 
 const montserrat = Montserrat({

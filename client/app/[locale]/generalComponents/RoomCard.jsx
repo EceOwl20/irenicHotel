@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaBed,
   FaUserFriends,
@@ -85,9 +86,9 @@ export default function RoomCard() {
                 </div>
 
                 {/* More Info Butonu */}
-                <button className="text-sm text-gray-600 font-heebo hover:text-white font-medium cursor-pointer transition duration-300 bg-orange-100 hover:bg-orange-500 px-4 py-2 rounded-md shadow-sm">
+                <Link href="/rooms/roomspage" className="text-sm text-gray-600 font-heebo hover:text-white font-medium cursor-pointer transition duration-300 bg-orange-100 hover:bg-orange-500 px-4 py-2 rounded-md shadow-sm">
                     More Info
-                </button>
+                </Link>
             </div>
           </div>
         </div>
