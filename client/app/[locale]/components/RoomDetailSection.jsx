@@ -1,33 +1,29 @@
-/*
- * components/RoomDetailSection.jsx
- * Room detail slider with thumbnails + booking form + amenities + description, overview, and features.
- * Uses React Icons and Tailwind CSS.
- */
-
 'use client';
 
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
+import { usePathname, useParams } from 'next/navigation';
 import AmenitiesBar from './AmenitiesBar';
 
-export default function RoomDetailSection({
-  images = [],
-  description = '',
-  overview = [],
-  features = ''
-}) {
+export default function RoomDetailSection({ slug, images = [] }) {
+  // 1) Client tarafında hem next-intl hem de routing hook’larını kullanabiliriz
+  const t = useTranslations('subrooms');
+  const { slug: _ } = useParams();      // Next.js >=15, dynamic param’ı alır
+  const title       = t(`${slug}.title`);
+  const description = t(`${slug}.description`);
+  const features    = t(`${slug}.features`);
+// Yeni: tek string → array
+const rawOverview = t(`${slug}.overview`);
+const overview    = rawOverview.split('\n');
   const [current, setCurrent] = useState(0);
   const total = images.length;
-  const prev = () => setCurrent(i => (i === 0 ? total - 1 : i - 1));
-  const next = () => setCurrent(i => (i === total - 1 ? 0 : i + 1));
-  const goTo = idx => setCurrent(idx);
+  const prev = () => setCurrent((c) => (c - 1 + total) % total);
+  const next = () => setCurrent((c) => (c + 1) % total);
 
   return (
-    <div>
-      {/* Amenities bar right after banner */}
-      <AmenitiesBar />
-
-      {/* Slider & Booking Section */}
+    <section className="max-w-7xl mx-auto px-4 py-12">
+      <h1 className="text-3xl font-heading mb-6">{title}</h1>
       <section className="max-w-7xl mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8">
         {/* Slider and Thumbnails */}
         <div className="lg:col-span-2">
@@ -114,26 +110,30 @@ export default function RoomDetailSection({
           </form>
         </aside>
       </section>
+      <AmenitiesBar />
 
-      {/* Description, Overview & Features at the very end */}
-      <section className="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
-        <div>
+      {/* Slider + Thumbnails + Booking */}
+      {/* ... mevcut kodun ... */}
+
+      {/* Description, Overview & Features */}
+      <div className="mt-12 grid lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-3">
           <h2 className="text-2xl font-semibold mb-4">Description</h2>
-          <p className="text-gray-700 leading-relaxed">{description}</p>
+          <p className="text-gray-700">{description}</p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Overview</h3>
-          <ul className="space-y-1 text-sm">
+          <h3 className="text-xl font-semibold mb-2">Overview</h3>
+          <ul className="list-disc list-inside space-y-1">
             {overview.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-2">Features</h3>
-          <p className="text-sm leading-relaxed">{features}</p>
+          <h3 className="text-xl font-semibold mb-2">Features</h3>
+          <p>{features}</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

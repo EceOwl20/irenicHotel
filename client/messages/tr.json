@@ -17,5 +17,39 @@
    "adult":"Yetişkin",
    "children":"Çocuk"
 
-}
+},
+
+"subrooms": {
+    "deluxe-room-fr": {
+      "title":       "Deluxe Oda FR",
+      "description": "Geniş 20 m² Deluxe Oda; çift kişilik yatak, duşakabin ve modern olanaklar ile rahat konaklama.",
+      "overview":    "Oda büyüklüğü: 20 m²\nKapasite: Maks. 2 yetişkin\nYatak: Çift kişilik\nBanyo: Duşakabin\nGiriş: Elektronik oda anahtarı",
+      "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
+    },
+    "deluxe-room-tw": {
+      "title":       "Deluxe Oda TW",
+      "description": "Konforlu 20 m² Deluxe Oda; iki ayrı tek kişilik yatak, duşakabin ve gerekli tüm donanımlar.",
+      "overview":    "Oda büyüklüğü: 20 m²\nKapasite: Maks. 2 yetişkin\nYatak: 2 x Tek kişilik\nBanyo: Duşakabin\nGiriş: Elektronik oda anahtarı",
+      "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
+    },
+    "corner-room": {
+      "title":       "Corner Room",
+      "description": "Ferah 30 m² Corner Room; bir çift ve bir tek kişilik yataklı, şık tasarımlı ve aile boyu konfor sunan oda.",
+      "overview":    "Oda büyüklüğü: 30 m²\nKapasite: Maks. 3 yetişkin\nYatak: 1 x Çift, 1 x Tek kişilik\nBanyo: Duşakabin\nGiriş: Elektronik oda anahtarı",
+      "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
+    },
+    "jacuzzi-suite": {
+      "title":       "Jacuzzi Suite",
+      "description": "Lüks 30 m² Jacuzzi Suite; çift kişilik yatak, özel jakuzili banyo ve premium donanımlar.",
+      "overview":    "Oda büyüklüğü: 30 m²\nKapasite: Maks. 2 yetişkin\nYatak: Çift kişilik\nBanyo: Duşakabin + Jakuzili\nGiriş: Elektronik oda anahtarı",
+      "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
+    },
+    "deluxe-single-room": {
+      "title":       "Deluxe Single Room",
+      "description": "Kompakt 10 m² Deluxe Single Room; tek kişilik yatak ve temel konfor öğeleriyle ideal solo konaklama.",
+      "overview":    "Oda büyüklüğü: 10 m²\nKapasite: Maks. 1 yetişkin\nYatak: Tek kişilik\nBanyo: Duşakabin\nGiriş: Elektronik oda anahtarı",
+      "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
+    }
+  }
+
 }

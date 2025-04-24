@@ -3,7 +3,7 @@ import React from 'react';
 import Rezarvation from "../generalComponents/Reservation.jsx"
 import RoomCard from '../generalComponents/RoomCard.jsx';
 import Link from 'next/link';
-import { subrooms } from '@/public/data/subrooms';
+import { subrooms } from '@/data/subrooms.js';
 
 const Page = () => {
   return (
@@ -34,9 +34,9 @@ const Page = () => {
 
       {/* Room Cards Section */}
       <div className="relative z-10 -mt-8 sm:-mt-10 p-4 sm:p-6 md:p-10 bg-white">
-        <RoomCard />
+      <RoomCard />
       </div>
-      <section className="max-w-7xl mx-auto px-4 py-16 columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+      {/* <section className="max-w-7xl mx-auto px-4 py-16 columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
         {subrooms.map((room) => (
           <Link
             key={room.slug}
@@ -51,7 +51,7 @@ const Page = () => {
             <h3 className="mt-3 font-semibold text-center">{room.title}</h3>
           </Link>
         ))}
-      </section>
+      </section> */}
     </div>
   );
 };

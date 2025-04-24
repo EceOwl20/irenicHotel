@@ -16,5 +16,39 @@
       "search": "Suchen",
       "adult":"Erwachsene",
       "children":"Kind(er)"
+    },
+
+"subrooms": {
+    "deluxe-room-fr": {
+      "title":       "Deluxe Zimmer FR",
+      "description": "Geräumiges 20 m² Deluxe Zimmer mit komfortablem Doppelbett, privater Duschkabine und modernen Annehmlichkeiten für einen entspannten Aufenthalt.",
+      "overview":    "Zimmergröße: 20 m²\nKapazität: Max. 2 Erwachsene\nBett: Doppelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "deluxe-room-tw": {
+      "title":       "Deluxe Zimmer TW",
+      "description": "Gemütliches 20 m² Deluxe Zimmer mit zwei Einzelbetten, privater Duschkabine und verschiedenen Zimmerservices für einen komfortablen Aufenthalt.",
+      "overview":    "Zimmergröße: 20 m²\nKapazität: Max. 2 Erwachsene\nBett: 2 Einzelbetten\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "corner-room": {
+      "title":       "Eckzimmer",
+      "description": "Geräumiges 30 m² Eckzimmer mit einem Doppelbett und einem Einzelbett, stilvollem Design und Komfort ideal für Familien.",
+      "overview":    "Zimmergröße: 30 m²\nKapazität: Max. 3 Erwachsene\nBett: 1 Doppelbett + 1 Einzelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "jacuzzi-suite": {
+      "title":       "Jacuzzi Suite",
+      "description": "Luxuriöse 30 m² Jacuzzi Suite mit Doppelbett, privatem Jacuzzi und erstklassigen Annehmlichkeiten für ein unvergessliches Erlebnis.",
+      "overview":    "Zimmergröße: 30 m²\nKapazität: Max. 2 Erwachsene\nBett: Doppelbett\nBadezimmer: Duschkabine + Jacuzzi\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "deluxe-single-room": {
+      "title":       "Deluxe Einzelzimmer",
+      "description": "Kompaktes 10 m² Deluxe Einzelzimmer mit Einzelbett und grundlegenden Annehmlichkeiten, ideal für Alleinreisende.",
+      "overview":    "Zimmergröße: 10 m²\nKapazität: Max. 1 Erwachsener\nBett: Einzelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
     }
+  }
+
 }
