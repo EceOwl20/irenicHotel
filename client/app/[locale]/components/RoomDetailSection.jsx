@@ -22,7 +22,7 @@ const overview    = rawOverview.split('\n');
   const next = () => setCurrent((c) => (c + 1) % total);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
+    <section className="max-w-7xl mx-auto px-4 py-12 mt-[7%]">
       <h1 className="text-3xl font-heading mb-6">{title}</h1>
       <section className="max-w-7xl mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8">
         {/* Slider and Thumbnails */}
@@ -54,7 +54,7 @@ const overview    = rawOverview.split('\n');
                 key={idx}
                 onClick={() => goTo(idx)}
                 className={`flex-shrink-0 w-24 h-16 rounded-md overflow-hidden border-2 ${
-                  idx === current ? 'border-green-500' : 'border-transparent'
+                  idx === current ? 'border-irenicOrange' : 'border-transparent'
                 }`}
               >
                 <img
@@ -103,7 +103,7 @@ const overview    = rawOverview.split('\n');
             </div>
             <button
               type="submit"
-              className="mt-4 w-full bg-green-500 text-white py-3 rounded uppercase tracking-wide"
+              className="mt-4 w-full bg-irenicOrange text-white py-3 uppercase tracking-wide"
             >
               Book Now
             </button>

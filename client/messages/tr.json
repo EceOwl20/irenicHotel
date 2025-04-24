@@ -4,12 +4,22 @@
       "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Bilinmeyen}}"
     },
 
+    "Header":{
+      "home": "Anasayfa",
+        "about": "Hakkımızda",
+        "services": "Servisler",
+        "rooms":"Odalar",
+        "contact":"İletişim",
+        "booknow":"Rezervasyon"
+    },
+
     "Homepage":{
-      "hello":"MERHABA",
+      "title":"Antalya’nın Kalbinde Irenic Hotel",
+      "subtitle":  "Konforu ve Akdeniz’in Huzurunu Bir Arada Yaşayın", 
 
       "infoSection": {
-        "subtitle": "Hakkımızda",
-        "heading": "IRENIC HOTEL'e Hoş Geldiniz",
+        "subtitle": "IRENIC HOTEL'e Hoş Geldiniz",
+        "heading": "Konyaaltı’nda Eşsiz Konfor",
         "text": "Antalya Konyaaltı Sahili'nde yer alan lüks otelimizde unutulmaz bir tatil deneyimi sizi bekliyor! Denize yürüme mesafesindeki bu benzersiz konum, hayatınızın en keyifli tatilini yaşamanız için mükemmel bir fırsat sunuyor."
       },
       "slidingSections": {

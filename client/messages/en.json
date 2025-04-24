@@ -4,11 +4,21 @@
   
   },
 
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "rooms": "Rooms",
+    "contact": "Contact",
+    "booknow": "Book Now"
+  },
+
   "Homepage":{
-    "hello":"HELLO",
+    "title":    "Irenic Hotel in the Heart of Antalya",
+  "subtitle": "Experience Comfort and the Tranquility of the Mediterranean",
     "infoSection": {
-    "subtitle": "About Us",
-    "heading": "Welcome to IRENIC HOTEL",
+    "subtitle": "Welcome to IRENIC HOTEL",
+    "heading": "Unique Comfort in Konyaaltı",
     "text": "An unforgettable holiday experience awaits you at our luxury hotel on Antalya Konyaaltı Beach! This unique location within walking distance to the sea offers the perfect opportunity for the most enjoyable vacation of your life."
   },
   "slidingSections": {

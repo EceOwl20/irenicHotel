@@ -12,7 +12,7 @@ const GridSection = () => {
   const images=[accomodation,restaurant,beach,entertainment]
   
   return (
-    <div className='flex w-screen items-center justify-center bg-irenicGray py-[25px]'>
+    <div className='flex w-screen items-center justify-center bg-[#0F172B] py-[25px] lg:py-[65px]'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[96%] gap-[10px] md:gap-[20px] lg:gap-[30px] text-[14px] lg:text-[16px] font-heebo uppercase leading-[14px] tracking-[1px] text-white'>
         {[t("label1"),t("label2"),t("label3"),t("label4")].map((label, i) => (
           <div 
@@ -21,13 +21,13 @@ const GridSection = () => {
           >
             {/* resim kapsayıcı: overflow-hidden */}
             <div className="w-full h-full transform transition-transform duration-500 ease-out
-                            group-hover:scale-120 group-hover:rotate-2">
+                            group-hover:scale-120 group-hover:rotate-2 justify-center items-center">
               <Image 
                 src={images[i]} 
                 alt={label} 
                 width={420}
                 height={200} 
-                className="flex object-center object-cover" 
+                className=" object-end object-cover" 
               />
             </div>
             {/* üzerine binmiş yazı */}

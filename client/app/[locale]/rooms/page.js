@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <div className="relative w-full h-[70vh] sm:h-[80vh]">
+      <div className="relative w-full h-[70vh] sm:h-[90vh]">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"

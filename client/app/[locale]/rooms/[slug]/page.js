@@ -2,7 +2,6 @@
 import { notFound } from 'next/navigation';
 import { subrooms } from '@/data/subrooms';
 import RoomDetailSection from '../../components/RoomDetailSection';
-import { useTranslations } from 'next-intl';
 
 // hangi slug’lar için page üreteceğimizi bildiriyoruz
 export async function generateStaticParams() {

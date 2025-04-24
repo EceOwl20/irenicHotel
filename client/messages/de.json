@@ -4,12 +4,22 @@
       "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unbekannt}}"
     },
 
+    "Header": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "services": "Dienstleistungen",
+      "rooms": "Zimmer",
+      "contact": "Kontakt",
+      "booknow": "Jetzt buchen"
+    },
+
     "Homepage":{
-      "hello":"HELLO DE",
+       "title":    "Irenic Hotel im Herzen von Antalya",
+  "subtitle": "Genießen Sie Komfort und die Ruhe des Mittelmeers",
 
       "infoSection": {
-        "subtitle": "Über uns",
-        "heading": "Willkommen im IRENIC HOTEL",
+        "subtitle": "Willkommen im IRENIC HOTEL",
+        "heading": "Einzigartiger Komfort in Konyaaltı",
         "text": "Ein unvergessliches Urlaubserlebnis erwartet Sie in unserem Luxushotel am Strand von Antalya Konyaaltı! Diese einzigartige Lage in Gehweite zum Meer bietet die perfekte Gelegenheit für den schönsten Urlaub Ihres Lebens."
       },
       "slidingSections": {
