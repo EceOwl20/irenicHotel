@@ -1,31 +1,41 @@
+"use client";
 import React from 'react';
 import Rezarvation from "../generalComponents/Reservation.jsx"
 import RoomCard from '../generalComponents/RoomCard.jsx';
 
-const page = () => {
+const Page = () => {
   return (
-    <div className="relative w-screen h-[80vh]">
-      {/* Arka plan resmi */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/rooms/jacuzzi/jacuzzi1.webp')" }} // kendi resim yolunu yaz buraya
-      ></div>
+    <div className="flex flex-col">
+      {/* Hero Section */}
+      <div className="relative w-full h-[70vh] sm:h-[80vh]">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/rooms/jacuzzi/jacuzzi1.webp')" }}
+        ></div>
 
-      {/* Yazı katmanı */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/30 text-center px-4">
-            <h1 className="text-white text-4xl font-bold mb-4">Our Rooms</h1>
-            <p className="text-white text-lg max-w-2xl">
+        {/* Overlay Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/40 text-center px-4 sm:px-6 md:px-8">
+          <h1 className="text-white font-montserrat text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Our Rooms
+          </h1>
+          <p className="text-white text-base sm:text-lg md:text-xl max-w-3xl font-heebo">
             Located in the heart of Antalya’s Konyaaltı district, Irenic Hotel offers a refined selection of stylish rooms designed for both business and leisure travelers. Whether you choose a deluxe room, a cozy corner space, or our exclusive Jacuzzi suite, you’ll enjoy comfort, modern amenities, and effortless city access.
-            </p>
+          </p>
+        </div>
+
+        {/* Reservation form - should be positioned below text content */}
+        <div className="z-10 px-4 sm:px-6 md:px-8">
+          <Rezarvation />
+        </div>
       </div>
-      <div>
-        <Rezarvation />
-      </div>
-      <div>
+
+      {/* Room Cards Section */}
+      <div className="relative z-10 -mt-8 sm:-mt-10 p-4 sm:p-6 md:p-10 bg-white">
         <RoomCard />
       </div>
     </div>
   );
 };
 
-export default page;
+export default Page;
