@@ -28,19 +28,19 @@ const SlidingImageSection = ({ isReversed, title,text,buttonText }) => {
   return (
     <div
       ref={ref}
-      className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-screen items-center justify-center h-[60vh] overflow-hidden`}
+      className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} w-screen items-center justify-center h-[80vh] lg:h-[60vh] overflow-hidden`}
     >
       {/* Text half */}
-      <div className="flex flex-col w-[50%] items-center justify-center text-center bg-gray-100 h-full z-20">
+      <div className="flex flex-col w-[100%] lg:w-[50%] items-center justify-center text-center bg-gray-100 h-full z-20">
         <div className='flex flex-col w-[70%] max-w-[530px] items-center justify-center text-center gap-[15px] lg:gap-[35px] h-full'>
           <h3 className='text-[24px] md:text-[28px] lg:text-[36px] font-montserrat leading-[1.5]'>{title}</h3>
           <p className='text-[12px] lg:text-[14px] font-heebo text-irenicGray'>{text}</p>
-          <Link href="/rooms" className='bg-irenicBlack text-white py-[10px] px-[18px] uppercase hover:bg-[#FEA116]'>{buttonText}</Link>
+          <Link href="/rooms" className='bg-irenicBlack text-white text-[14px] lg:text-[16px] py-[6px] px-[12px] lg:py-[10px] lg:px-[18px] uppercase hover:bg-[#FEA116]'>{buttonText}</Link>
         </div>
       </div>
 
       {/* Image half with drop-line and slide-in */}
-      <div className="relative w-[50%] h-full overflow-hidden">
+      <div className="relative w-[100%] lg:w-[50%] min-h-[300px] h-full overflow-hidden">
         {/* 1px grey line curtain */}
         <div
           className={
