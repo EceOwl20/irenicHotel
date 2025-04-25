@@ -1,7 +1,10 @@
 import React from 'react';
+import {useTranslations} from 'next-intl';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage = () => {
+  const t = useTranslations('Contact');
+
   return (
     <div className="bg-white min-h-screen">
       {/* Başlık kısmı ve map kısmı burada olsun, yukarıdaki örneği dahil et */}
@@ -19,7 +22,7 @@ const ContactPage = () => {
           {/* Başlık */}
           <div className="relative z-10 flex items-center justify-center h-full px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-white font-montserrat text-center">
-              Contact
+           {t("headerTitle")}
             </h1>
           </div>
         </div>
@@ -28,23 +31,23 @@ const ContactPage = () => {
         <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Sol: İletişim Bilgileri */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold font-montserrat text-irenicBlack">Get In Touch</h2>
+            <h2 className="text-3xl font-bold font-montserrat text-irenicBlack">{t("subtitle")}</h2>
             <p className="text-gray-600 text-base font-heebo">
-              Have a question or need help with your reservation? Our team is here to assist you.
+            {t("getInTouchDesc")}
             </p>
 
             <div className="space-y-4 text-gray-700 text-sm font-heebo">
               <div className="flex items-start gap-4">
                 <FaMapMarkerAlt className="text-xl text-irenicBlack mt-1" />
-                <span>Liman Mh. Atatürk Blv. No:265, Konyaaltı, Antalya</span>
+                <span>{t("addressValue2")}</span>
               </div>
               <div className="flex items-center gap-4">
                 <FaPhoneAlt className="text-xl text-irenicBlack" />
-                <span>+90 242 999 88 59</span>
+                <span> {t("phoneValue")}</span>
               </div>
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-xl text-irenicBlack" />
-                <span>info@irenichotel.com</span>
+                <span> {t("emailValue")}</span>
               </div>
             </div>
 
@@ -53,28 +56,28 @@ const ContactPage = () => {
               target="_blank"
               className="inline-block mt-4 bg-irenicBlack text-white text-sm px-6 py-2 rounded-md hover:bg-black transition font-montserrat"
             >
-              Open in Google Maps
+               {t("openMapsButton")}
             </a>
           </div>
 
           {/* Sağ: İletişim Formu */}
           <form className="space-y-5">
             <div>
-              <label className="block text-sm font-medium text-gray-700">Name</label>
+              <label className="block text-sm font-medium text-gray-700"> {t("formNameLabel")}</label>
               <input
                 type="text"
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <label className="block text-sm font-medium text-gray-700"> {t("formEmailLabel")}</label>
               <input
                 type="email"
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Message</label>
+              <label className="block text-sm font-medium text-gray-700"> {t("formMessageLabel")}</label>
               <textarea
                 rows={5}
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
@@ -84,7 +87,7 @@ const ContactPage = () => {
               type="submit"
               className="bg-irenicBlack text-white px-6 py-2 rounded-md hover:bg-black transition"
             >
-              Send Message
+               {t("formSubmit")}
             </button>
           </form>
         </div>

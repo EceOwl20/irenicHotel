@@ -4,6 +4,8 @@ import MainCarousel from "./generalComponents/MainBanner";
 import InfoSection from "./generalComponents/InfoSection";
 import SlidingImageSection from "./generalComponents/SlidingImageSection";
 import GridSection from "./generalComponents/GridSection";
+import ServicesSection from './generalComponents/ServicesSection';
+import ContactSection from './generalComponents/ContactSection';
 
 export default function Home() {
   const t = useTranslations('Homepage');
@@ -30,8 +32,10 @@ const slidingButton2 = t('slidingSections.second.button')
      <div className="flex flex-col">
      <SlidingImageSection title={slidingTitle} text={slidingText} buttonText={slidingButton} isReversed={false}/>
      <SlidingImageSection title={slidingTitle2} text={slidingText2} buttonText={slidingButton2} isReversed={true}/>
-     </div>
      <GridSection/>
+     </div>
+     <ServicesSection/>
+     <ContactSection/>
     </div>
   );
 }

@@ -137,5 +137,55 @@
     "followUs": "Follow Us",
     "copyright": "© {year} Irenic Hotel. All rights reserved.",
     "poweredBy": "Powered by DGTLFACE"
+  },
+  "Services": {
+    "subtitle": "Our Services",
+    "title": "What We Offer",
+    "titleFreeWifi": "Free Wi-Fi",
+    "descriptionFreeWifi": "Fiber internet available in rooms and all open areas.",
+    "titleOpenSwimmingPool": "Open Swimming Pool",
+    "descriptionOpenSwimmingPool": "15 m² outdoor pool at 160 cm depth; open 08:00–18:00.",
+    "titleALaCarteRestaurant": "A La Carte Restaurant",
+    "descriptionALaCarteRestaurant": "À la carte service, open 08:00–22:00 for breakfast & dinner.",
+    "titleLobbyBar": "24 h Lobby Bar",
+    "descriptionLobbyBar": "Hot, cold & alcoholic beverages available round-the-clock.",
+    "titleLaundryService": "Laundry Service",
+    "descriptionLaundryService": "Third-party laundry; turnaround in one full day (paid).",
+    "titleAirportTransfer": "Airport Transfer",
+    "descriptionAirportTransfer": "Paid, third-party transfer service to/from Antalya Airport."
+  },
+
+  "Contact": {
+    "headerTitle": "Contact",
+    "subtitle": "Get In Touch",
+    "title": "Drop Us A Line",
+    "addressLabel": "Address:",
+    "addressValue": "Konyaaltı/Antalya, Türkiye",
+    "addressValue2": "Liman Mh. Atatürk Blv. No:265\n07130 Konyaaltı/Antalya, Türkiye",
+    "phoneLabel": "Phone:",
+    "phoneValue": "+90 242 999 88 59",
+    "cityLabel": "City:",
+    "cityValue": "Antalya",
+    "emailLabel": "Email:",
+    "emailValue": "info@irenichotel.com",
+    "checkinLabel": "Check-In:",
+    "checkinValue": "14:00",
+    "checkoutLabel": "Check-Out:",
+    "checkoutValue": "11:00",
+    "footerInfo": "Open all year round",
+    "footerPhone": "+90 242 999 88 59",
+    "getInTouchDesc": "Have a question or need help with your reservation? Our team is here to assist you.",
+    "openMapsButton": "Open in Google Maps",
+    "formNameLabel": "Name",
+    "formEmailLabel": "Email",
+    "formMessageLabel": "Message",
+    "formSubmit": "Send Message"
+  },
+  "About": {
+    "para1": "Welcome to Irenic Hotel, a modern boutique hotel located in the heart of Antalya’s vibrant Konyaaltı district. Since our opening in November 2023, we’ve been committed to providing an elegant, comfortable, and memorable stay for both business and leisure travelers.",
+    "para2": "With 59 well-appointed rooms, including exclusive Jacuzzi Suites and spacious Corner Rooms, our hotel is designed for guests who appreciate quality, aesthetics, and convenience. Each room is thoughtfully equipped with contemporary amenities to make your stay as seamless as possible.",
+    "para3": "At Irenic Hotel, we believe that hospitality is more than a service — it’s an experience. Whether you're enjoying your morning coffee in our stylish lobby, relaxing by the outdoor pool, or planning your day with help from our 24/7 team, we aim to deliver warm, personalized service every step of the way.",
+    "para4": "Discover the charm of city living with the comfort of a boutique hotel. Welcome home — welcome to Irenic."
   }
+  
 }

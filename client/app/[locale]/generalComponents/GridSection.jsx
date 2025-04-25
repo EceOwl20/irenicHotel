@@ -14,7 +14,7 @@ const GridSection = () => {
   ];
 
   return (
-    <section className="bg-[#0F172B] py-16">
+    <section className="bg-irenicGray py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {images.map((src, i) => {
@@ -45,7 +45,7 @@ const GridSection = () => {
 
                 {/* Label */}
                 <h3
-                  className="absolute bottom-4 left-4 text-white 
+                  className="absolute bottom-4 left-4 text-white  px-2 py-0 bg-[#0F172B]/80
                              font-montserrat text-lg md:text-xl"
                 >
                   {label}

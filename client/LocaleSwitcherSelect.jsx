@@ -1,6 +1,7 @@
 import { useTransition, useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function LocaleSwitcherSelect({ children, defaultValue, label }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +34,9 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }) 
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent uppercase w-full text-[14px] font-montserrat">
+        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent uppercase w-full text-[16px] font-montserrat">
         {defaultValue}
+        <IoMdArrowDropdown color="#ffa217"/>
       </button>
       {isOpen && (
         <div className="absolute z-50 mt-0 rounded bg-irenicBlack shadow-lg left-0 w-full ">
