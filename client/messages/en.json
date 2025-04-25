@@ -62,7 +62,15 @@
   "adults":"Adults",
   "children":"Children",
   "booknow":"Book Now",
-  
+  "Amenities": {
+    "freeWifi": "Free Wi-Fi",
+    "swimmingPool": "Swimming Pool",
+    "aLaCarteRestaurant": "A La Carte Restaurant",
+    "lobbyBar": "24h Lobby Bar",
+    "airportTransfer": "Airport Transfer",
+    "laundryService": "Laundry Service"
+  },
+
   "deluxe-room-fr": {
     "title":       "Deluxe Room FR",
     "description": "Spacious 20 m² Deluxe Room featuring a comfortable double bed, an en-suite shower cabin, and modern amenities for a relaxing stay.",

@@ -64,6 +64,15 @@
   "children": "Çocuklar",
   "booknow": "Hemen Rezervasyon Yap",
   
+  "Amenities": {
+    "freeWifi": "Ücretsiz Wi-Fi",
+    "swimmingPool": "Açık Yüzme Havuzu",
+    "aLaCarteRestaurant": "A La Carte Restoran",
+    "lobbyBar": "24 Saat Lobi Bar",
+    "airportTransfer": "Havalimanı Transferi",
+    "laundryService": "Çamaşır Yıkama Servisi"
+  },
+
     "deluxe-room-fr": {
       "title":       "Deluxe Oda FR",
       "description": "Geniş 20 m² Deluxe Oda; çift kişilik yatak, duşakabin ve modern olanaklar ile rahat konaklama.",

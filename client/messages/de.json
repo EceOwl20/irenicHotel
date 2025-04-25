@@ -62,7 +62,16 @@
   "adults": "Erwachsene",
   "children": "Kinder",
   "booknow": "Jetzt buchen",
-  
+
+  "Amenities": {
+    "freeWifi": "Kostenloses WLAN",
+    "swimmingPool": "Schwimmbad",
+    "aLaCarteRestaurant": "À-la-carte-Restaurant",
+    "lobbyBar": "24h Lobbybar",
+    "airportTransfer": "Flughafentransfer",
+    "laundryService": "Wäscheservice"
+  },
+
     "deluxe-room-fr": {
       "title":       "Deluxe Zimmer FR",
       "description": "Geräumiges 20 m² Deluxe Zimmer mit komfortablem Doppelbett, privater Duschkabine und modernen Annehmlichkeiten für einen entspannten Aufenthalt.",
