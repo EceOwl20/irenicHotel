@@ -54,6 +54,16 @@
 },
 
 "subrooms": {
+  "description": "Açıklama",
+  "overview": "Genel Bakış",
+  "features": "Özellikler",
+  "availability": "Müsaitliği Kontrol Et",
+  "checkin": "Giriş Tarihi",
+  "checkout": "Çıkış Tarihi",
+  "adults": "Yetişkinler",
+  "children": "Çocuklar",
+  "booknow": "Hemen Rezervasyon Yap",
+  
     "deluxe-room-fr": {
       "title":       "Deluxe Oda FR",
       "description": "Geniş 20 m² Deluxe Oda; çift kişilik yatak, duşakabin ve modern olanaklar ile rahat konaklama.",
@@ -84,6 +94,44 @@
       "overview":    "Oda büyüklüğü: 10 m²\nKapasite: Maks. 1 yetişkin\nYatak: Tek kişilik\nBanyo: Duşakabin\nGiriş: Elektronik oda anahtarı",
       "features":    "Elektronik anahtar, Klima, Direkt hat telefon, Android TV, Minibar, Elektronik kasa, Saç kurutma makinesi, Kettle, Çay, Wi-Fi, Havlu seti, Terlik."
     }
+  },
+
+  "Rooms": {
+    "heroTitle": "Odalarımız",
+    "heroDescription": "Antalya’nın Konyaaltı semtinin kalbinde yer alan Irenic Hotel, iş ve tatil amaçlı gezginler için şık odalardan oluşan özenle seçilmiş bir koleksiyon sunar. Deluxe odalarımızdan samimi köşe odalarımıza veya özel Jakuzili süitimize kadar, konfor, modern olanaklar ve şehre kolay erişim sizi bekliyor.",
+    "RoomCard": {
+      "deluxeRoomFrName": "Deluxe Oda Çift Kişilik",
+      "deluxeRoomFrDescription": "Çift kişilik yatak ve tüm modern olanaklarla donatılmış, çiftler için ideal.",
+      "deluxeRoomTwName": "Deluxe Oda İkiz Yataklı",
+      "deluxeRoomTwDescription": "İkiz yataklar ve sıcak bir atmosfer, arkadaşlar veya yalnız gezginler için uygun.",
+      "cornerRoomName": "Köşe Oda",
+      "cornerRoomDescription": "Bir çift kişilik ve bir tek kişilik yataklı geniş köşe oda.",
+      "jacuzziSuiteName": "Jakuzili Süit",
+      "jacuzziSuiteDescription": "Romantik kaçamaklar için mükemmel, jakuzili lüks süit.",
+      "deluxeSingleRoomName": "Deluxe Tek Kişilik Oda",
+      "deluxeSingleRoomDescription": "Yalnız seyahat edenler için ideal. Rahat ve eksiksiz donanımlı.",
+      "bookFrom": " TL’den Başlayan Fiyatlarla",
+      "moreInfo": "Detaylı Bilgi"
+    }
+  },
+
+  "Footer": {
+    "hotelName": "Irenic Otel",
+    "tagline": "Antalya Konyaaltı’nda butik şıklığı keşfedin. Oda & Kahvaltı konsepti ile tüm yıl hizmetinizde.",
+    "contactTitle": "İletişim",
+    "address": "Liman Mh. Atatürk Blv. No:265, 07130 Konyaaltı/Antalya, Türkiye",
+    "phone": "+90 242 999 88 59",
+    "email": "info@irenichotel.com",
+    "quickLinksTitle": "Hızlı Linkler",
+    
+      "rooms": "Odalar",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "reservation": "Rezervasyon",
+ 
+    "followUs": "Bizi Takip Edin",
+    "copyright": "© {year} Irenic Otel. Tüm hakları saklıdır."
+    
   }
 
 }

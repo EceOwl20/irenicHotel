@@ -9,6 +9,7 @@ import AmenitiesBar from './AmenitiesBar';
 export default function RoomDetailSection({ slug, images = [] }) {
   // 1) Client tarafında hem next-intl hem de routing hook’larını kullanabiliriz
   const t = useTranslations('subrooms');
+
   const { slug: _ } = useParams();      // Next.js >=15, dynamic param’ı alır
   const title       = t(`${slug}.title`);
   const description = t(`${slug}.description`);
@@ -69,24 +70,24 @@ const overview    = rawOverview.split('\n');
 
         {/* Booking Form */}
         <aside className="bg-black text-white p-6 rounded-lg">
-          <h3 className="text-lg font-semibold mb-4">Check Availability</h3>
+          <h3 className="text-lg font-semibold mb-4">{t("availability")}</h3>
           <form className="space-y-4">
             <div>
-              <label className="block text-xs uppercase mb-1">Check-in Date</label>
+              <label className="block text-xs uppercase mb-1">{t("checkin")}</label>
               <input
                 type="date"
                 className="w-full bg-gray-800 text-white px-3 py-2 rounded"
               />
             </div>
             <div>
-              <label className="block text-xs uppercase mb-1">Check-out Date</label>
+              <label className="block text-xs uppercase mb-1">{t("checkout")}</label>
               <input
                 type="date"
                 className="w-full bg-gray-800 text-white px-3 py-2 rounded"
               />
             </div>
             <div>
-              <label className="block text-xs uppercase mb-1">Adults</label>
+              <label className="block text-xs uppercase mb-1">{t("adults")}</label>
               <select className="w-full bg-gray-800 text-white px-3 py-2 rounded">
                 {[1,2,3,4].map(n => (
                   <option key={n} value={n}>{n}</option>
@@ -94,7 +95,7 @@ const overview    = rawOverview.split('\n');
               </select>
             </div>
             <div>
-              <label className="block text-xs uppercase mb-1">Children</label>
+              <label className="block text-xs uppercase mb-1">{t("children")}</label>
               <select className="w-full bg-gray-800 text-white px-3 py-2 rounded">
                 {[0,1,2,3].map(n => (
                   <option key={n} value={n}>{n}</option>
@@ -105,7 +106,7 @@ const overview    = rawOverview.split('\n');
               type="submit"
               className="mt-4 w-full bg-irenicOrange text-white py-3 uppercase tracking-wide"
             >
-              Book Now
+              {t("booknow")}
             </button>
           </form>
         </aside>
@@ -118,11 +119,11 @@ const overview    = rawOverview.split('\n');
       {/* Description, Overview & Features */}
       <div className="mt-12 grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-3">
-          <h2 className="text-2xl font-semibold mb-4">Description</h2>
+          <h2 className="text-2xl font-semibold mb-4">{t("description")}</h2>
           <p className="text-gray-700">{description}</p>
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-2">Overview</h3>
+          <h3 className="text-xl font-semibold mb-2">{t("overview")}</h3>
           <ul className="list-disc list-inside space-y-1">
             {overview.map((item, i) => (
               <li key={i}>{item}</li>
@@ -130,7 +131,7 @@ const overview    = rawOverview.split('\n');
           </ul>
         </div>
         <div>
-          <h3 className="text-xl font-semibold mb-2">Features</h3>
+          <h3 className="text-xl font-semibold mb-2">{t("features")}</h3>
           <p>{features}</p>
         </div>
       </div>
