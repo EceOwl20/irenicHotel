@@ -1,29 +1,61 @@
-"use client"
-import React from 'react'
-import logo from "@/public/images/irenicLogo.png"
-import Image from 'next/image'
-import Link from 'next/link'
-import LangSwitcher from "@/LangSwitcher";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import LangSwitcher from '@/LangSwitcher';
+import logo from '@/public/images/irenicLogo.png';
 import {useTranslations} from 'next-intl';
 
-const Header = () => {
+export default function Header() {
+  const t = useTranslations('Header');
+
+  const [isOpaque, setIsOpaque] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // when you've scrolled more than one screen height, make it opaque
+      setIsOpaque(window.scrollY > window.innerHeight);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <div className='flex sticky max-w-screen w-s items-center justify-center  bg-irenicBlack h-[80px] lg:h-[102px] z-[999] shadow-md'>
-      <div className='flex w-[90%] lg:w-[85%] lg:max-w-[1200px] items-center justify-between'>
-        <Image src={logo} alt='logo' width={100} height={100} className='w-[70px] h-[70px] lg:w-[90px] lg:h-[90px]'/>
-        <div className='hidden lg:flex items-center justify-center lg:min-w-[50%] text-irenicOrange text-[14px] font-heebo text-center xl:gap-[40px] gap-[30px] leading-[20px] tracking-[2px]'>
-            <Link href="/">HOME</Link>
-            <Link href="/about">HAKKINIZDA</Link>
-            <Link href="/services">SERVİSLER</Link>
-            <Link href="/rooms">ODALAR</Link>
-            <Link href="/contact">İLETİŞİM</Link>
-            <Link href="https://irenic.rezervasyonal.com/" rel="norefferer nofollower"
-                  target="_blank" className='flex items-center justify-center text-center bg-irenicOrange text-[12px] py-[8px] px-[16px] text-white whitespace-nowrap'>BOOK NOW</Link>
-            <LangSwitcher/>
-        </div>
+    <div
+      className={`
+        fixed top-0 left-0 w-screen flex items-center justify-center
+        h-[80px] lg:h-[102px] z-[999]
+        transition-colors duration-300
+        ${isOpaque ? 'bg-irenicBlack' : 'bg-transparent shadow-2xs'}
+      `}
+    >
+      <div className="flex w-[90%] lg:w-[85%] max-w-[1200px] items-center justify-between">
+        <Image
+          src={logo}
+          alt="logo"
+          width={90}
+          height={90}
+          className="w-[70px] h-[70px] lg:w-[90px] lg:h-[90px]"
+        />
+
+        <nav className="hidden lg:flex items-center gap-[30px] xl:gap-[40px] text-irenicOrange text-[15px] font-medium font-heebo uppercase tracking-[2px]">
+          <Link href="/">{t("home")}</Link>
+          <Link href="/rooms">{t("rooms")}</Link>
+          <Link href="/services">{t("services")}</Link>
+          <Link href="/about">{t("about")}</Link>
+          <Link href="/contact">{t("contact")}</Link>
+          <Link
+            href="https://irenic.rezervasyonal.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-irenicOrange text-white text-[12px] py-[8px] px-[16px] hover:bg-orange-500 transition"
+          >
+            {t("booknow")}
+          </Link>
+          <LangSwitcher />
+        </nav>
       </div>
     </div>
-  )
+  );
 }
-
-export default Header

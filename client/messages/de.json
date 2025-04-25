@@ -4,8 +4,42 @@
       "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unbekannt}}"
     },
 
+    "Header": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "services": "Dienstleistungen",
+      "rooms": "Zimmer",
+      "contact": "Kontakt",
+      "booknow": "Jetzt buchen"
+    },
+
     "Homepage":{
-      "hello":"HELLO DE"
+       "title":    "Irenic Hotel im Herzen von Antalya",
+  "subtitle": "Genießen Sie Komfort und die Ruhe des Mittelmeers",
+
+      "infoSection": {
+        "subtitle": "Willkommen im IRENIC HOTEL",
+        "heading": "Einzigartiger Komfort in Konyaaltı",
+        "text": "Ein unvergessliches Urlaubserlebnis erwartet Sie in unserem Luxushotel am Strand von Antalya Konyaaltı! Diese einzigartige Lage in Gehweite zum Meer bietet die perfekte Gelegenheit für den schönsten Urlaub Ihres Lebens."
+      },
+      "slidingSections": {
+        "first": {
+          "title": "Deluxe Einzelzimmer",
+          "text": "Kompaktes 10 m² Deluxe Einzelzimmer mit einem Einzelbett und allen notwendigen Annehmlichkeiten, ideal für Alleinreisende.",
+          "button": "VERFÜGBARKEIT PRÜFEN"
+        },
+        "second": {
+          "title": "Jacuzzi Suite",
+          "text": "Luxuriöse 30 m² Jacuzzi Suite mit Doppelbett, privatem Jacuzzi und erstklassigen Annehmlichkeiten für ein unvergessliches Erlebnis.",
+          "button": "VERFÜGBARKEIT PRÜFEN"
+        }
+      },
+      "gridSection": {
+        "label1": "Zimmer",
+        "label2": "Restaurant",
+        "label3": "Pool",
+        "label4": "Lobi-Bar"
+      }
     },
 
     "Reservation": {
@@ -16,5 +50,39 @@
       "search": "Suchen",
       "adult":"Erwachsene",
       "children":"Kind(er)"
+    },
+
+"subrooms": {
+    "deluxe-room-fr": {
+      "title":       "Deluxe Zimmer FR",
+      "description": "Geräumiges 20 m² Deluxe Zimmer mit komfortablem Doppelbett, privater Duschkabine und modernen Annehmlichkeiten für einen entspannten Aufenthalt.",
+      "overview":    "Zimmergröße: 20 m²\nKapazität: Max. 2 Erwachsene\nBett: Doppelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "deluxe-room-tw": {
+      "title":       "Deluxe Zimmer TW",
+      "description": "Gemütliches 20 m² Deluxe Zimmer mit zwei Einzelbetten, privater Duschkabine und verschiedenen Zimmerservices für einen komfortablen Aufenthalt.",
+      "overview":    "Zimmergröße: 20 m²\nKapazität: Max. 2 Erwachsene\nBett: 2 Einzelbetten\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "corner-room": {
+      "title":       "Eckzimmer",
+      "description": "Geräumiges 30 m² Eckzimmer mit einem Doppelbett und einem Einzelbett, stilvollem Design und Komfort ideal für Familien.",
+      "overview":    "Zimmergröße: 30 m²\nKapazität: Max. 3 Erwachsene\nBett: 1 Doppelbett + 1 Einzelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "jacuzzi-suite": {
+      "title":       "Jacuzzi Suite",
+      "description": "Luxuriöse 30 m² Jacuzzi Suite mit Doppelbett, privatem Jacuzzi und erstklassigen Annehmlichkeiten für ein unvergessliches Erlebnis.",
+      "overview":    "Zimmergröße: 30 m²\nKapazität: Max. 2 Erwachsene\nBett: Doppelbett\nBadezimmer: Duschkabine + Jacuzzi\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
+    },
+    "deluxe-single-room": {
+      "title":       "Deluxe Einzelzimmer",
+      "description": "Kompaktes 10 m² Deluxe Einzelzimmer mit Einzelbett und grundlegenden Annehmlichkeiten, ideal für Alleinreisende.",
+      "overview":    "Zimmergröße: 10 m²\nKapazität: Max. 1 Erwachsener\nBett: Einzelbett\nBadezimmer: Duschkabine\nZugang: Elektronische Zimmerkarte",
+      "features":    "Elektronische Zimmerkarte, Klimaanlage, Direktanruftelefon, Android TV, Minibar, elektronischer Safe, Haartrockner, Wasserkocher, Tee, WLAN, Handtuchset, Hausschuhe."
     }
+  }
+
 }

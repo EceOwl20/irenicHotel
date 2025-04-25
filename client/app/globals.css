@@ -52,3 +52,10 @@
     filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
    
   }
+
+  .parallax {
+    background-attachment: fixed;
+    background-position: top left; /* "start" yerine daha yaygın ve uyumlu bir değer */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

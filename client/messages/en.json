@@ -4,8 +4,41 @@
   
   },
 
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "rooms": "Rooms",
+    "contact": "Contact",
+    "booknow": "Book Now"
+  },
+
   "Homepage":{
-    "hello":"HELLO"
+    "title":    "Irenic Hotel in the Heart of Antalya",
+  "subtitle": "Experience Comfort and the Tranquility of the Mediterranean",
+    "infoSection": {
+    "subtitle": "Welcome to IRENIC HOTEL",
+    "heading": "Unique Comfort in Konyaaltı",
+    "text": "An unforgettable holiday experience awaits you at our luxury hotel on Antalya Konyaaltı Beach! This unique location within walking distance to the sea offers the perfect opportunity for the most enjoyable vacation of your life."
+  },
+  "slidingSections": {
+    "first": {
+      "title": "Deluxe Single Room",
+      "text": "Compact 10 m² Deluxe Single Room with one single bed and essential amenities, ideal for solo travelers seeking comfort.",
+      "button": "CHECK AVAILABILITY"
+    },
+    "second": {
+      "title": "Jacuzzi Suite",
+      "text": "Luxurious 30 m² Jacuzzi Suite with a double bed, private jacuzzi, and premium amenities for an indulgent experience.",
+      "button": "CHECK AVAILABILITY"
+    }
+  },
+  "gridSection": {
+    "label1": "Rooms",
+    "label2": "Restaurant",
+    "label3": "Pool",
+    "label4": "Lobby Bar"
+  }
   },
 
   "Reservation":{
@@ -17,5 +50,38 @@
    "adult":"Adult",
    "children":"Children"
 
+},
+
+"subrooms": {
+  "deluxe-room-fr": {
+    "title":       "Deluxe Room FR",
+    "description": "Spacious 20 m² Deluxe Room featuring a comfortable double bed, an en-suite shower cabin, and modern amenities for a relaxing stay.",
+    "overview":    "Room size: 20 m²\nCapacity: Max. 2 adults\nBed type: Double bed\nBathroom: Shower cabin\nEntry: Electronic key card",
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+  },
+  "deluxe-room-tw": {
+    "title":       "Deluxe Room TW",
+    "description": "Cozy 20 m² Deluxe Room with two single beds, a private shower cabin, and all in-room conveniences for a comfortable stay.",
+    "overview":    "Room size: 20 m²\nCapacity: Max. 2 adults\nBed type: 2 Single beds\nBathroom: Shower cabin\nEntry: Electronic key card",
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+  },
+  "corner-room": {
+    "title":       "Corner Room",
+    "description": "Spacious 30 m² Corner Room featuring one double and one single bed, stylish design, and perfect comfort for families.",
+    "overview":    "Room size: 30 m²\nCapacity: Max. 3 adults\nBed type: 1 Double + 1 Single bed\nBathroom: Shower cabin\nEntry: Electronic key card",
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+  },
+  "jacuzzi-suite": {
+    "title":       "Jacuzzi Suite",
+    "description": "Luxurious 30 m² Jacuzzi Suite with a double bed, private jacuzzi, and premium amenities for an indulgent experience.",
+    "overview":    "Room size: 30 m²\nCapacity: Max. 2 adults\nBed type: Double bed\nBathroom: Shower cabin + Jacuzzi\nEntry: Electronic key card",
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+  },
+  "deluxe-single-room": {
+    "title":       "Deluxe Single Room",
+    "description": "Compact 10 m² Deluxe Single Room with one single bed and essential amenities, ideal for solo travelers seeking comfort.",
+    "overview":    "Room size: 10 m²\nCapacity: Max. 1 adult\nBed type: Single bed\nBathroom: Shower cabin\nEntry: Electronic key card",
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+  }
 }
 }
