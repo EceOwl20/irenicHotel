@@ -53,6 +53,24 @@
 },
 
 "subrooms": {
+  "description":"Description",
+  "overview":"Overview",
+  "features":"Features",
+  "availability":"Check Availability",
+  "checkin":"Check-in Date",
+  "checkout":"Check-out Date",
+  "adults":"Adults",
+  "children":"Children",
+  "booknow":"Book Now",
+  "Amenities": {
+    "freeWifi": "Free Wi-Fi",
+    "swimmingPool": "Swimming Pool",
+    "aLaCarteRestaurant": "A La Carte Restaurant",
+    "lobbyBar": "24h Lobby Bar",
+    "airportTransfer": "Airport Transfer",
+    "laundryService": "Laundry Service"
+  },
+
   "deluxe-room-fr": {
     "title":       "Deluxe Room FR",
     "description": "Spacious 20 m² Deluxe Room featuring a comfortable double bed, an en-suite shower cabin, and modern amenities for a relaxing stay.",
@@ -83,5 +101,41 @@
     "overview":    "Room size: 10 m²\nCapacity: Max. 1 adult\nBed type: Single bed\nBathroom: Shower cabin\nEntry: Electronic key card",
     "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
   }
-}
+},
+
+"Rooms": {
+    "heroTitle": "Our Rooms",
+    "heroDescription": "Located in the heart of Antalya’s Konyaaltı district, Irenic Hotel offers a refined selection of stylish rooms designed for both business and leisure travelers. Whether you choose a deluxe room, a cozy corner space, or our exclusive Jacuzzi suite, you’ll enjoy comfort, modern amenities, and effortless city access.",
+    "RoomCard": {
+      "deluxeRoomFrName": "Deluxe Room FR",
+      "deluxeRoomFrDescription": "Comfortable double bed with all modern amenities, ideal for couples.",
+      "deluxeRoomTwName": "Deluxe Room TW",
+      "deluxeRoomTwDescription": "Twin beds and a cozy atmosphere for friends or solo travelers.",
+      "cornerRoomName": "Corner Room",
+      "cornerRoomDescription": "Spacious corner room with one double and one single bed.",
+      "jacuzziSuiteName": "Jacuzzi Suite",
+      "jacuzziSuiteDescription": "A luxurious suite with a jacuzzi — perfect for a romantic escape.",
+      "deluxeSingleRoomName": "Deluxe Single Room",
+      "deluxeSingleRoomDescription": "Ideal for solo travelers. Cozy and fully equipped for comfort.",
+      "bookFrom": "BOOK FROM ",
+      "moreInfo": "More Info"
+    }
+  },
+
+    "Footer": {
+    "hotelName": "Irenic Hotel",
+    "tagline": "Discover boutique elegance in Konyaaltı, Antalya. Bed & Breakfast concept open year-round.",
+    "contactTitle": "Contact Us",
+    "address": "Liman Neighborhood, Atatürk Boulevard No:265, 07130 Konyaaltı/Antalya, Turkey",
+    "phone": "+90 242 999 88 59",
+    "email": "info@irenichotel.com",
+    "quickLinksTitle": "Quick Links",
+      "rooms": "Rooms",
+      "about": "About",
+      "contact": "Contact",
+      "reservation": "Reservation",
+    "followUs": "Follow Us",
+    "copyright": "© {year} Irenic Hotel. All rights reserved.",
+    "poweredBy": "Powered by DGTLFACE"
+  }
 }

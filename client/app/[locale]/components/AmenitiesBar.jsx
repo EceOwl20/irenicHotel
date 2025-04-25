@@ -2,24 +2,27 @@
 
 import React from 'react';
 import {
-  FaSmokingBan,
-  FaBed,
-  FaShip,
-  FaCocktail,
+  FaWifi,
   FaSwimmingPool,
   FaUtensils,
+  FaCocktail,
+  FaPlane,
+  FaTshirt,
 } from 'react-icons/fa';
-
-const amenities = [
-  { label: 'No Smoking', Icon: FaSmokingBan },
-  { label: 'Big Beds', Icon: FaBed },
-  { label: 'Yacht Riding', Icon: FaShip },
-  { label: 'Free Drinks', Icon: FaCocktail },
-  { label: 'Swimming Pool', Icon: FaSwimmingPool },
-  { label: 'Room Breakfast', Icon: FaUtensils },
-];
+import { useTranslations } from 'next-intl';
 
 export default function AmenitiesBar() {
+  const t = useTranslations('subrooms.Amenities');
+
+  const amenities = [
+    { label: t("freeWifi"), Icon: FaWifi },
+    { label: t("swimmingPool"), Icon: FaSwimmingPool },
+    { label: t("aLaCarteRestaurant"), Icon: FaUtensils },
+    { label: t("lobbyBar"), Icon: FaCocktail },
+    { label: t("airportTransfer"), Icon: FaPlane },
+    { label: t("laundryService"), Icon: FaTshirt },
+  ];
+
   return (
     <div className="w-full bg-black text-white py-6">
       <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-12 gap-y-4">
