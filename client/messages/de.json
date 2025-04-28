@@ -1,7 +1,7 @@
 {
     "LocaleSwitcher": {
       "label": "Sprache ändern",
-      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unbekannt}}"
+      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} ae {AE} other {Unbekannt}}"
     },
 
     "Header": {
@@ -185,10 +185,22 @@
   },
 
   "About": {
+    "aboutus":"Über uns",
     "para1": "Willkommen im Irenic Hotel, einem modernen Boutique-Hotel im Herzen des lebendigen Konyaaltı-Viertels von Antalya. Seit unserer Eröffnung im November 2023 sind wir bestrebt, Geschäfts- und Freizeitreisenden einen eleganten, komfortablen und unvergesslichen Aufenthalt zu bieten.",
     "para2": "Mit 59 stilvoll eingerichteten Zimmern, darunter exklusive Jacuzzi-Suiten und geräumige Eckzimmer, richtet sich unser Hotel an Gäste, die Qualität, Ästhetik und Bequemlichkeit schätzen. Jedes Zimmer ist sorgfältig mit modernen Annehmlichkeiten ausgestattet, um Ihren Aufenthalt so reibungslos wie möglich zu gestalten.",
     "para3": "Im Irenic Hotel verstehen wir Gastfreundschaft als mehr als nur Service – es ist ein Erlebnis. Ob Sie Ihren Morgenkaffee in unserer stilvollen Lobby genießen, am Außenpool entspannen oder Ihren Tag mit Hilfe unseres 24/7-Teams planen – wir möchten Ihnen jederzeit warmen, persönlichen Service bieten.",
-    "para4": "Entdecken Sie den Charme des Stadtlebens mit dem Komfort eines Boutique-Hotels. Willkommen zu Hause – willkommen im Irenic."
+    "para4": "Entdecken Sie den Charme des Stadtlebens mit dem Komfort eines Boutique-Hotels. Willkommen zu Hause – willkommen im Irenic.",
+    "Features": {
+    "subtitle": "Ein bisschen über uns",
+    "title": "Bestes Hotel",
+    "feature1": "Begrüßungsgetränk",
+    "feature2": "Swimmingpool",
+    "feature3": "Essen Inklusive",
+    "text1": "Genießen Sie ein kostenloses Begrüßungsgetränk beim Einchecken in Ihren unvergesslichen Aufenthalt.",
+    "text2": "Erfrischen Sie sich in unserem Außenpool, täglich geöffnet von 08:00 bis 18:00 Uhr.",
+    "text3": "Beginnen Sie Ihren Tag mit einem reichhaltigen Frühstück, das jeden Morgen im Aufenthalt inbegriffen ist.",
+    "buttonText": "Mehr Lesen"
+  }
   }
 
 }

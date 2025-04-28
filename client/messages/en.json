@@ -1,6 +1,6 @@
 {   "LocaleSwitcher": {
     "label": "Change language",
-    "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Unknown}}"
+    "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} ae {AE} other {Unknown}}"
   
   },
 
@@ -182,10 +182,23 @@
     "formSubmit": "Send Message"
   },
   "About": {
+    "aboutus":"About Us",
     "para1": "Welcome to Irenic Hotel, a modern boutique hotel located in the heart of Antalya’s vibrant Konyaaltı district. Since our opening in November 2023, we’ve been committed to providing an elegant, comfortable, and memorable stay for both business and leisure travelers.",
     "para2": "With 59 well-appointed rooms, including exclusive Jacuzzi Suites and spacious Corner Rooms, our hotel is designed for guests who appreciate quality, aesthetics, and convenience. Each room is thoughtfully equipped with contemporary amenities to make your stay as seamless as possible.",
     "para3": "At Irenic Hotel, we believe that hospitality is more than a service — it’s an experience. Whether you're enjoying your morning coffee in our stylish lobby, relaxing by the outdoor pool, or planning your day with help from our 24/7 team, we aim to deliver warm, personalized service every step of the way.",
-    "para4": "Discover the charm of city living with the comfort of a boutique hotel. Welcome home — welcome to Irenic."
+    "para4": "Discover the charm of city living with the comfort of a boutique hotel. Welcome home — welcome to Irenic.",
+
+    "Features":{
+      "subtitle":"A Bit About Us",
+      "title":"Finest Hotel",
+      "feature1":"Welcome Drink",
+      "feature2":"Swimming Pool",
+      "feature3":"Food Included",
+      "text1":"Enjoy a complimentary welcome drink as you check into your unforgettable stay.",
+      "text2":"Take a dip in our refreshing outdoor pool available daily from 08:00 to 18:00.",
+      "text3":"Start your day with a rich breakfast included in your stay, every morning.",
+      "buttonText":"Read More"
+    }
   }
   
 }

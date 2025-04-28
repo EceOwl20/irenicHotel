@@ -1,7 +1,7 @@
 {
     "LocaleSwitcher": {
       "label": "Dili Değiştir",
-      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} other {Bilinmeyen}}"
+      "locale": "{locale, select, en {EN} tr {TR} ru {RU} de {DE} ae {AE} other {Bilinmeyen}}"
     },
 
     "Header":{
@@ -188,10 +188,22 @@
   },
 
   "About": {
+    "aboutus":"Hakkımızda",
     "para1": "Irenic Hotel’e hoş geldiniz; Antalya’nın canlı Konyaaltı semtinin kalbinde yer alan modern bir butik oteliz. Kasım 2023’teki açılışımızdan bu yana iş ve tatil amaçlı konaklamalarda zarif, konforlu ve unutulmaz bir deneyim sunmaya kendimizi adadık.",
     "para2": "Özel Jakuzili Süitler ve geniş Köşe Odaları dahil olmak üzere 59 şık odasıyla otelimiz, kaliteyi, estetiği ve pratikliği takdir eden misafirlere yönelik tasarlandı. Her oda, konaklamanızı olabildiğince sorunsuz kılmak için çağdaş olanaklarla özenle donatılmıştır.",
     "para3": "Irenic Hotel’de misafirperverliğin sadece bir hizmet değil, aynı zamanda bir deneyim olduğuna inanıyoruz. Şık lobimizde sabah kahvenizin tadını çıkarıyor, açık havuzumuzda dinleniyor veya 7/24 hizmet veren ekibimizden destek alarak gününüzü planlıyor olun, her adımda sıcak, kişisel bir hizmet sunmayı hedefliyoruz.",
-    "para4": "Şehir yaşamının cazibesini bir butik otelin konforuyla keşfedin. Hoş geldiniz — evinizdesiniz, Irenic’e hoş geldiniz."
+    "para4": "Şehir yaşamının cazibesini bir butik otelin konforuyla keşfedin. Hoş geldiniz — evinizdesiniz, Irenic’e hoş geldiniz.",
+    "Features": {
+      "subtitle": "Hakkımızda Biraz Bilgi",
+      "title": "En İyi Otel",
+      "feature1": "Hoşgeldin İçeceği",
+      "feature2": "Yüzme Havuzu",
+      "feature3": "Yemek Dahil",
+      "text1": "Unutulmaz konaklamanıza giriş yaparken ücretsiz hoşgeldin içeceğinin tadını çıkarın.",
+      "text2": "Her gün 08:00 - 18:00 saatleri arasında hizmet veren açık havuzumuzda serinleyin.",
+      "text3": "Her sabah konaklamanıza dahil zengin bir kahvaltı ile güne başlayın.",
+      "buttonText": "Daha Fazla Oku"
+    }
   }
 
 }

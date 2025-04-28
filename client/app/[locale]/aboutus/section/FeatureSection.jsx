@@ -1,12 +1,15 @@
 import { FaCocktail, FaSwimmingPool, FaUtensils } from 'react-icons/fa';
+import {useTranslations} from 'next-intl';
 
 export default function FeatureSection() {
+  const t = useTranslations('About.Features');
+
   return (
     <section className="bg-white py-20 px-4 sm:px-6 md:px-12">
       {/* Başlık */}
       <div className="text-center mb-16">
-        <p className="text-sm text-gray-400 tracking-wide uppercase font-heebo">A Bit About Us</p>
-        <h2 className="text-3xl sm:text-4xl font-bold font-montserrat text-gray-800 mt-2">Finest Hotel</h2>
+        <p className="text-sm text-gray-400 tracking-wide uppercase font-heebo">{t("subtitle")}</p>
+        <h2 className="text-3xl sm:text-4xl font-bold font-montserrat text-gray-800 mt-2">{t("title")}</h2>
       </div>
 
       {/* 3'lü Kart Grid */}
@@ -14,36 +17,36 @@ export default function FeatureSection() {
         {/* Kart 1 */}
         <div className="space-y-5">
           <FaCocktail className="text-4xl mx-auto text-irenicBlack" />
-          <h3 className="text-xl font-semibold font-montserrat text-gray-800">Welcome Drink</h3>
+          <h3 className="text-xl font-semibold font-montserrat text-gray-800">{t("feature1")}</h3>
           <p className="text-sm text-gray-500 font-heebo">
-            Enjoy a complimentary welcome drink as you check into your unforgettable stay.
+          {t("text1")}
           </p>
           <button className="mt-2 px-5 py-2 bg-gray-900 text-white text-sm rounded hover:bg-gray-700 transition">
-            Read More
+          {t("buttonText")}
           </button>
         </div>
 
         {/* Kart 2 */}
         <div className="space-y-5">
           <FaSwimmingPool className="text-4xl mx-auto text-irenicBlack" />
-          <h3 className="text-xl font-semibold font-montserrat text-gray-800">Swimming Pool</h3>
+          <h3 className="text-xl font-semibold font-montserrat text-gray-800">{t("feature2")}</h3>
           <p className="text-sm text-gray-500 font-heebo">
-            Take a dip in our refreshing outdoor pool available daily from 08:00 to 18:00.
+          {t("text2")}
           </p>
           <button className="mt-2 px-5 py-2 bg-gray-900 text-white text-sm rounded hover:bg-gray-700 transition">
-            Read More
+          {t("buttonText")}
           </button>
         </div>
 
         {/* Kart 3 */}
         <div className="space-y-5">
           <FaUtensils className="text-4xl mx-auto text-irenicBlack" />
-          <h3 className="text-xl font-semibold font-montserrat text-gray-800">Food Included</h3>
+          <h3 className="text-xl font-semibold font-montserrat text-gray-800">{t("feature3")}</h3>
           <p className="text-sm text-gray-500 font-heebo">
-            Start your day with a rich breakfast included in your stay, every morning.
+          {t("text3")}
           </p>
           <button className="mt-2 px-5 py-2 bg-gray-900 text-white text-sm rounded hover:bg-gray-700 transition">
-            Read More
+          {t("buttonText")}
           </button>
         </div>
       </div>
