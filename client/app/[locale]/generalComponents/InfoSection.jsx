@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import img1 from '@/public/rooms/jacuzzi/jacuzzi1.webp';
-import img2 from '@/public/rooms/french9.jpg';
-import img3 from '@/public/rooms/single4.jpg';
+import img2 from '@/public/images/deluxeCorner/IRN-CORNER4.webp';
+import img3 from '@/public/images/twintwinbalkonyroom/IRN-DELUXETWIN2.webp';
 
 const InfoSection = ({ subtitle, title, text }) => {
   const [mounted, setMounted] = useState(false);

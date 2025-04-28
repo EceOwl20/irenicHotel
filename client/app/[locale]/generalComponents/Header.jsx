@@ -44,18 +44,22 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-[30px] xl:gap-[40px] text-irenicOrange text-[15px] font-medium font-heebo uppercase tracking-[2px]">
-            <Link href="/">{t('home')}</Link>
-            <Link href="/rooms">{t('rooms')}</Link>
-            <Link href="/services">{t('services')}</Link>
-            <Link href="/aboutus">{t('about')}</Link>
-            <Link href="/contact">{t('contact')}</Link>
+          <Link href="/" className="group relative inline-block">
+  <span className="relative z-10 ">{t('home')}</span>
+  <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span>
+</Link>
+            <Link className='group relative inline-block' href="/rooms"><span>{t('rooms')}</span>  <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span></Link>
+            <Link className="group relative inline-block" href="/services"><span>{t('services')}</span> <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span></Link>
+            <Link className="group relative inline-block" href="/aboutus"><span>{t('about')}</span> <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span></Link>
+            <Link className="group relative inline-block" href="/contact"><span>{t('contact')}</span> <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span></Link>
             <Link
               href="https://irenic.rezervasyonal.com/"
               target="_blank"
               rel="noreferrer"
-              className="bg-irenicOrange text-white text-[12px] py-[8px] px-[16px] hover:bg-orange-500 transition"
+              className="bg-[#ffa217] text-white text-[12px] py-[8px] px-[16px] hover:bg-white hover:text-[#ffa217] transition group relative inline-block"
             >
               {t('booknow')}
+              <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#ffa217] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <LangSwitcher />
           </nav>
