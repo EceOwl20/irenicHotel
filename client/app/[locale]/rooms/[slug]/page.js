@@ -5,8 +5,15 @@ import RoomDetailSection from '../../components/RoomDetailSection';
 
 // hangi slug’lar için page üreteceğimizi bildiriyoruz
 export async function generateStaticParams() {
-  return subrooms.map(({ slug }) => ({ slug }));
+  const locales = ['tr', 'en','de','ru','ae']; 
+  return locales.flatMap((locale) =>
+    subrooms.map(({ slug }) => ({
+      locale,
+      slug,
+    }))
+  );
 }
+
 
 export default function RoomPage({ params }) {
   // const t = useTranslations('subrooms');

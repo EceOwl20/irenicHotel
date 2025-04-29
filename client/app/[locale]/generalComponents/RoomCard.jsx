@@ -62,7 +62,7 @@ export default function RoomCard() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="min-h-screen mt-36 bg-gray-50 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-8/12">
+      <div className="min-h-screen mt-10 lg:mt-36 bg-gray-50 p-1 lg:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-[94%] lg:w-8/12">
         {rooms.map((room) => (
           <div
             key={room.slug}
@@ -93,7 +93,7 @@ export default function RoomCard() {
                 </div>
                 <Link
                   href={`/rooms/${room.slug}`}
-                  className="text-sm text-gray-600 font-heebo hover:text-white font-medium transition duration-300 bg-orange-100 hover:bg-orange-500 px-4 py-2 rounded-md shadow-sm"
+                  className="text-sm lg:text-gray-600 font-heebo hover:text-white font-medium transition duration-300 bg-orange-500 text-white lg:bg-orange-100 hover:bg-orange-500 px-4 py-2 rounded-md shadow-sm"
                 >
                   {t("moreInfo")}
                 </Link>

@@ -25,14 +25,14 @@ const overview    = rawOverview.split('\n');
   return (
     <section className="max-w-7xl mx-auto px-4 py-12 mt-[7%]">
       <h1 className="text-3xl font-heading mb-6">{title}</h1>
-      <section className="max-w-7xl mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8">
+      <section className="flex flex-col lg:grid lg:grid-cols-3 gap-8">
         {/* Slider and Thumbnails */}
         <div className="lg:col-span-2">
           <div className="relative">
             <img
               src={images[current]}
               alt={`Slide ${current + 1}`}
-              className="w-full h-[400px] object-cover rounded-lg"
+               className="w-full min-h-64 h-[40vh] sm:h-[50vh] md:h-[60vh] object-cover rounded-lg"
             />
             <button
               onClick={prev}

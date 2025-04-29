@@ -29,7 +29,7 @@ const Page = () => {
 
         {/* Reservation form - should be positioned below text content */}
         <div className="z-10 px-4 sm:px-6 md:px-8">
-          <Rezarvation />
+        <Rezarvation />
         </div>
       </div>
 
