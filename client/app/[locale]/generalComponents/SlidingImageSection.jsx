@@ -1,10 +1,9 @@
 "use client";
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
-import img1 from "@/public/rooms/jacuzzi/jacuzzi1.webp";
 import Link from 'next/link';
 
-const SlidingImageSection = ({ isReversed, title,text,buttonText }) => {
+const SlidingImageSection = ({ isReversed, title,text,buttonText,img }) => {
   const [animate, setAnimate] = useState(false);
   const ref = useRef(null);
 
@@ -51,7 +50,7 @@ const SlidingImageSection = ({ isReversed, title,text,buttonText }) => {
         <div
           className={`transform transition-transform duration-1000 ease-out delay-500 ${animate ? 'translate-x-0' : initialTranslate} w-full h-full`}
         >
-          <Image src={img1} alt='room' width={img1.width} height={img1.height} className="object-cover w-full h-full" />
+          <Image src={img} alt='room' width={img.width} height={img.height} className="object-cover w-full h-full" />
         </div>
       </div>
     </div>

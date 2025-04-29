@@ -1,8 +1,11 @@
 "use client";
 import React from 'react';
+import {useTranslations} from 'next-intl';
 import FeatureSection from './section/FeatureSection';
 
 const AboutPage = () => {
+  const t = useTranslations('About');
+
   return (
     <div className="bg-white min-h-screen">
       {/* Başlık Bölgesi - Arka Planlı */}
@@ -28,19 +31,19 @@ const AboutPage = () => {
       <div className="px-4 sm:px-6 md:px-16 pb-12">
         <div className="max-w-4xl mx-auto space-y-6 text-gray-700 font-heebo text-base sm:text-lg leading-relaxed">
           <p>
-            Welcome to <strong>Irenic Hotel</strong>, a modern boutique hotel located in the heart of Antalya’s vibrant Konyaaltı district. Since our opening in November 2023, we’ve been committed to providing an elegant, comfortable, and memorable stay for both business and leisure travelers.
+           {t("para1")}
           </p>
 
           <p>
-            With 59 well-appointed rooms, including exclusive Jacuzzi Suites and spacious Corner Rooms, our hotel is designed for guests who appreciate quality, aesthetics, and convenience. Each room is thoughtfully equipped with contemporary amenities to make your stay as seamless as possible.
+          {t("para2")}
           </p>
 
           <p>
-            At Irenic Hotel, we believe that hospitality is more than a service — it’s an experience. Whether you're enjoying your morning coffee in our stylish lobby, relaxing by the outdoor pool, or planning your day with help from our 24/7 team, we aim to deliver warm, personalized service every step of the way.
+          {t("para3")}
           </p>
 
           <p>
-            Discover the charm of city living with the comfort of a boutique hotel. Welcome home — welcome to Irenic.
+          {t("para4")}
           </p>
         </div>
       </div>

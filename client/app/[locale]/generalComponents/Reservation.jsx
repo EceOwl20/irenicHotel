@@ -164,7 +164,7 @@ export default function Reservation() {
             aria-expanded={showAdults}
             type="button"
           >
-            {t("adult")}
+            <span> {adults === 0 ? t("adult") : `${adults} ${t("adult")}`}</span>{" "}{" "}
             <IoIosArrowDown className="flex ml-[16px]" width={12} height={12} />
           </button>
           {showAdults && (
@@ -190,6 +190,7 @@ export default function Reservation() {
               <div className="flex justify-between items-center mb-3">
                 <label htmlFor="adultCounter" id="adultCounterLabel" className="whitespace-nowrap">
                   {t("adult")}
+                  
                 </label>
                 <div className="flex items-center gap-1 lg:gap-2" id="adultCounter">
                   <button
@@ -263,13 +264,12 @@ export default function Reservation() {
               font-medium
               font-heebo
                border
-               border-white/50
-            "
+               border-white/50"
             aria-haspopup="dialog"
             aria-expanded={showChildren}
             type="button"
           >
-            {t("children")}
+           <span> {children === 0 ? t("children") : `${children} ${t("children")}`}</span>
             <IoIosArrowDown className="flex ml-[13px]" width={12} height={12} />
           </button>
           {showChildren && (

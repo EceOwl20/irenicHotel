@@ -1,9 +1,9 @@
 // data/subrooms.js
 export const subrooms = [
-  { slug: 'deluxe-room-fr', images: ['/rooms/deluxe-fr/1.webp'] },
-  { slug: 'deluxe-room-tw', images: ['/rooms/deluxe-tw/1.webp'] },
-  { slug: 'corner-room',    images: ['/rooms/corner/1.webp'] },
-  { slug: 'jacuzzi-suite',  images: ['/rooms/jacuzzi/1.webp'] },
-  { slug: 'deluxe-single-room', images: ['/rooms/deluxe-single/1.webp'] },
+  { slug: 'deluxe-room-fr', images: ['/rooms/balkonyfrenchroom/IRN-FRENCHBED1.webp','/rooms/balkonyfrenchroom/IRN-FRENCHBED2.webp','/rooms/balkonyfrenchroom/IRN-FRENCHBED3.webp','/rooms/balkonyfrenchroom/IRN-FRENCHBED4.webp','/rooms/balkonyfrenchroom/IRN-FRENCHBED5.webp','/rooms/balkonyfrenchroom/IRN-FRENCHBED6.webp'] },
+  { slug: 'deluxe-room-tw', images: ['/images/twintwinbalkonyroom/Deluxetwinroom.webp','/images/twintwinbalkonyroom/IRN-DELUXETWIN2.webp','/images/twintwinbalkonyroom/IRN-DELUXETWIN3.webp','/images/twintwinbalkonyroom/IRN-DELUXETWIN4.webp','/images/twintwinbalkonyroom/IRN-DELUXETWINROOM5.webp','/images/twintwinbalkonyroom/IRN-DELUXETWINROOM7.webp','/images/twintwinbalkonyroom/IRN-DELUXETWINROOM8.webp','/images/twintwinbalkonyroom/IRN-DELUXETWINROOM9.webp'] },
+  { slug: 'corner-room',    images: ['/images/deluxeCorner/IRN-CORNER.webp','/images/deluxeCorner/IRN-CORNER2.webp','/images/deluxeCorner/IRN-CORNER3.webp','/images/deluxeCorner/IRN-CORNER4.webp','/images/deluxeCorner/IRN-CORNER5.webp','/images/deluxeCorner/IRN-CORNER6.webp','/images/deluxeCorner/IRN-CORNER7.webp'] },
+  { slug: 'jacuzzi-suite',  images: ['/images/jakuzi/IRN-JAKUZI.webp','/images/jakuzi/IRN-JAKUZI2.webp','/images/jakuzi/IRN-JAKUZI3.webp','/images/jakuzi/IRN-JAKUZI4.webp','/images/jakuzi/IRN-JAKUZI5.webp','/images/jakuzi/IRN-JAKUZI6.webp','/images/jakuzi/IRN-JAKUZI7.webp','/images/jakuzi/IRN-JAKUZI8.webp','/images/jakuzi/IRN-JAKUZI9.webp'] },
+  { slug: 'deluxe-single-room', images: ['/images/frenchroom/IRN-DELUXEFRENCHROOM2.webp','/images/frenchroom/IRN-DELUXEFRENCHROOM.webp','/images/frenchroom/IRN-DELUXEFRENCHROOM3.webp','/images/frenchroom/IRN-DELUXEFRENCHROOM4.webp','/images/frenchroom/IRN-DELUXEFRENCHROOM5.webp','/images/frenchroom/IRN-DELUXEFRENCHROOM6.webp','/images/frenchroom/IRN-DELUXEFRENCH7.webp'] },
 ];
   

@@ -5,7 +5,8 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
-  FaTwitter
+  FaTwitter,
+  FaTripadvisor
 } from 'react-icons/fa';
 import Link from 'next/link';
 import DgtlfaceSvg from './DgtlfaceSvg';
@@ -72,9 +73,12 @@ const Footer = () => {
             ))}
           </ul>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-white transition-colors"><FaFacebookF /></a>
-            <a href="#" className="hover:text-white transition-colors"><FaInstagram /></a>
-            <a href="#" className="hover:text-white transition-colors"><FaTwitter /></a>
+            <a href="https://www.facebook.com/irenichotel"  target="_blank"
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/hotelirenic/"  target="_blank"
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaInstagram /></a>
+            <a href="https://www.tripadvisor.com.tr/Hotel_Review-g297962-d27423172-Reviews-Irenic_Hotel-Antalya_Turkish_Mediterranean_Coast.html"  target="_blank"
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaTripadvisor size={20} /></a>
           </div>
         </div>
       </div>

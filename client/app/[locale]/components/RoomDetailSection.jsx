@@ -36,14 +36,14 @@ const overview    = rawOverview.split('\n');
             />
             <button
               onClick={prev}
-              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full cursor-pointer"
               aria-label="Previous"
             >
               <FaChevronLeft />
             </button>
             <button
               onClick={next}
-              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full cursor-pointer"
               aria-label="Next"
             >
               <FaChevronRight />
@@ -53,7 +53,7 @@ const overview    = rawOverview.split('\n');
             {images.map((src, idx) => (
               <button
                 key={idx}
-                onClick={() => goTo(idx)}
+                // onClick={() => goTo(idx)}
                 className={`flex-shrink-0 w-24 h-16 rounded-md overflow-hidden border-2 ${
                   idx === current ? 'border-irenicOrange' : 'border-transparent'
                 }`}

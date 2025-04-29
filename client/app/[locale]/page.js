@@ -6,6 +6,8 @@ import SlidingImageSection from "./generalComponents/SlidingImageSection";
 import GridSection from "./generalComponents/GridSection";
 import ServicesSection from './generalComponents/ServicesSection';
 import ContactSection from './generalComponents/ContactSection';
+import img1 from '@/public/images/frenchroom/IRN-DELUXEFRENCHROOM4.webp'
+import img2 from '@/public/images/jakuzi/IRN-JAKUZI.webp'
 
 export default function Home() {
   const t = useTranslations('Homepage');
@@ -30,8 +32,8 @@ const slidingButton2 = t('slidingSections.second.button')
       <MainCarousel/>
       <InfoSection subtitle={infoSubtitle} title={infoTitle} text={infoText}/>
      <div className="flex flex-col">
-     <SlidingImageSection title={slidingTitle} text={slidingText} buttonText={slidingButton} isReversed={false}/>
-     <SlidingImageSection title={slidingTitle2} text={slidingText2} buttonText={slidingButton2} isReversed={true}/>
+     <SlidingImageSection title={slidingTitle} text={slidingText} buttonText={slidingButton} isReversed={false} img={img1}/>
+     <SlidingImageSection title={slidingTitle2} text={slidingText2} buttonText={slidingButton2} isReversed={true} img={img2}/>
      <GridSection/>
      </div>
      <ServicesSection/>
