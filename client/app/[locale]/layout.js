@@ -5,6 +5,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from './generalComponents/Header';
 import Footer from './generalComponents/Footer';
+import BookSection from './generalComponents/BookSection';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default async function RootLayout({ children, params }) {
       >
           <NextIntlClientProvider>
             <Header/>
+            <BookSection/>
         {children}
             <Footer />        
         </NextIntlClientProvider>

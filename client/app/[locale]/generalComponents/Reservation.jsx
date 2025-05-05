@@ -39,7 +39,7 @@ export default function Reservation() {
       className="
       max-w-[1100px]
         hidden
-        md:flex
+        lg:flex
         absolute 
         bottom-[4%]  
        left-[50%]
