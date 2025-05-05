@@ -2,6 +2,7 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
 import FeatureSection from './section/FeatureSection';
+import img from "../../../public/general/irenicHotel.webp"
 
 const AboutPage = () => {
   const t = useTranslations('About');
@@ -13,7 +14,7 @@ const AboutPage = () => {
         {/* Arka plan görseli */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/general/irenicHotel.webp')" }}
+          style={{ backgroundImage: `url(${img.src})` }}
         ></div>
 
         {/* Overlay */}

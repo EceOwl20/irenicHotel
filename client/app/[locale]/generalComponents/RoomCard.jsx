@@ -62,13 +62,13 @@ export default function RoomCard() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="min-h-screen mt-10 lg:mt-36 bg-gray-50 p-1 lg:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-[94%] lg:w-[80%] xl:w-[78%] max-w-[1500px]">
+      <div className="min-h-screen mt-10 lg:mt-36 bg-gray-50 p-1 lg:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-[94%] lg:w-[80%] xl:w-[75%] max-w-[1200px]">
         {rooms.map((room) => (
           <div
             key={room.slug}
             className="bg-white  shadow-md overflow-hidden"
           >
-            <div className="relative w-full h-64 lg:h-[40vh] lg:min-h-[300px]">
+            <div className="relative w-full h-64 lg:h-[40vh] lg:min-h-[300px] max-h-[340px]">
               <Image
                 src={room.image}
                 alt={room.name}

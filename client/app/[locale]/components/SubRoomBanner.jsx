@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslations } from 'next-intl';
+import img2 from "../rooms/images/bannerfoto.webp"
 
 const SubRoomBanner = ({slug}) => {
     const t = useTranslations('subrooms');
@@ -14,7 +15,7 @@ const SubRoomBanner = ({slug}) => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/rooms/jacuzzi/jacuzzi1.webp')" }}
+        style={{ backgroundImage: `url(${img2.src})` }}
       ></div>
 
       {/* Overlay Content */}

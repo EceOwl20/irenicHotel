@@ -3,6 +3,8 @@ import React from 'react';
 import Reservation from "../generalComponents/Reservation.jsx"
 import RoomCard from '../generalComponents/RoomCard.jsx';
 import {useTranslations} from 'next-intl';
+import img from "@/public/rooms/jacuzzi/jacuzzi1.webp"
+import img2 from "./images/bannerfoto.webp"
 
 const Page = () => {
   const t = useTranslations('Rooms');
@@ -14,7 +16,7 @@ const Page = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/rooms/jacuzzi/jacuzzi1.webp')" }}
+          style={{ backgroundImage: `url(${img2.src})` }}
         ></div>
 
         {/* Overlay Content */}
