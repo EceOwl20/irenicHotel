@@ -24,12 +24,12 @@ export default function AmenitiesBar() {
   ];
 
   return (
-    <div className="w-full bg-black text-white py-6">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-12 gap-y-4">
+    <div className="w-full bg-irenicGray text-white py-12">
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-16 gap-y-2 lg:gap-y-3">
         {amenities.map(({ label, Icon }) => (
-          <div key={label} className="flex flex-col items-center gap-2">
+          <div key={label} className="flex flex-col items-center gap-2 md:gap-4 lg:gap-6">
             <Icon className="w-6 h-6" />
-            <span className="text-xs uppercase tracking-widest">{label}</span>
+            <span className="text-xs lg:text-[13px] uppercase tracking-widest font-light">{label}</span>
           </div>
         ))}
       </div>

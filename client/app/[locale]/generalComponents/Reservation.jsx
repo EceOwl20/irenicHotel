@@ -157,9 +157,7 @@ export default function Reservation() {
               font-medium
               font-heebo
               border
-              border-white/50
-            
-            "
+              border-white/50  "
             aria-haspopup="dialog"
             aria-expanded={showAdults}
             type="button"

@@ -61,8 +61,8 @@ const ChatBox = () => {
           
           {/* Gönderilen mesajlar */}
           {messages.map((msg, index) => (
-              <div key={index} className="bg-grayLight p-2 rounded-lg mb-2 ml-12 text-sm flex-wrap whitespace-normal flex w-5/6 flex-1 break-words h-auto">
-                <text className="text-[14px] text-darkB">{msg}</text>
+              <div key={index} className="bg-grayLight p-2 rounded-lg mb-2 ml-12 text-sm flex-wrap whitespace-normal flex w-5/6 flex-1 break-words h-auto bg-gray-100">
+                <p className="text-[14px] text-darkB ">{msg}</p>
               </div>
             ))}
           </div>

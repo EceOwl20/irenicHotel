@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Rezarvation from "../generalComponents/Reservation.jsx"
+import Reservation from "../generalComponents/Reservation.jsx"
 import RoomCard from '../generalComponents/RoomCard.jsx';
 import {useTranslations} from 'next-intl';
 
@@ -29,7 +29,7 @@ const Page = () => {
 
         {/* Reservation form - should be positioned below text content */}
         <div className="z-10 px-4 sm:px-6 md:px-8">
-        <Rezarvation />
+        <Reservation />
         </div>
       </div>
 
