@@ -9,8 +9,8 @@ const GridSection = () => {
   const images = [
     '/images/accomodation.jpg',
     '/images/restaurants.jpg',
-    '/images/beach.jpg',
-    '/images/entertainment.jpg'
+    '/images/IRN-HAVUZ3.webp',
+    '/images/IRN-BAR-2.webp'
   ];
 
   return (

@@ -13,7 +13,7 @@ const ContactPage = () => {
           {/* Arka plan görseli */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/general/contact-header.webp')" }} // kendi görsel yolun
+            style={{ backgroundImage: "url('/general/irenicHotel.webp')" }} // kendi görsel yolun
           ></div>
 
           {/* Overlay */}

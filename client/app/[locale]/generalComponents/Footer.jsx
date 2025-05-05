@@ -61,16 +61,45 @@ const Footer = () => {
         <div>
           <h4 className="font-montserrat text-xl mb-4">{t("quickLinksTitle")}</h4>
           <ul className="space-y-3 text-gray-300 mb-6">
-            {[t("rooms"), t("about"), t("contact"), t("reservation")].map((path) => (
-              <li key={path}>
+          {/* , t("about"), t("contact"), t("reservation") */}
+              <li >
                 <Link
-                  href={`/${path}`}
+                  href="/rooms"
                   className="hover:underline hover:text-white transition-colors"
                 >
-                  {path.charAt(0).toUpperCase() + path.slice(1)}
+                  {t("rooms")}
                 </Link>
               </li>
-            ))}
+
+              <li >
+                <Link
+                  href="/aboutus"
+                  className="hover:underline hover:text-white transition-colors"
+                >
+                  {t("about")}
+                </Link>
+              </li>
+
+              <li >
+                <Link
+                  href="/contact"
+                  className="hover:underline hover:text-white transition-colors"
+                >
+                  {t("contact")}
+                </Link>
+              </li>
+
+              <li >
+                <Link
+                  href="https://irenic.rezervasyonal.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:underline hover:text-white transition-colors"
+                >
+                  {t("reservation")}
+                </Link>
+              </li>
+           
           </ul>
           <div className="flex space-x-4">
             <a href="https://www.facebook.com/irenichotel"  target="_blank"

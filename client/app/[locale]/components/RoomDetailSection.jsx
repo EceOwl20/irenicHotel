@@ -25,7 +25,7 @@ const overview    = rawOverview.split('\n');
   return (
     <section className="max-w-7xl mx-auto px-4 py-12 mt-[7%]">
       <h1 className="text-3xl font-heading mb-6">{title}</h1>
-      <section className="flex flex-col lg:grid lg:grid-cols-3 gap-8">
+      <section className="flex flex-col lg:grid lg:grid-cols-3 gap-8 mb-6 md:mb-10 lg:mb-16">
         {/* Slider and Thumbnails */}
         <div className="lg:col-span-2">
           <div className="relative">
