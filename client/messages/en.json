@@ -65,7 +65,7 @@
   "Amenities": {
     "freeWifi": "Free Wi-Fi",
     "swimmingPool": "Swimming Pool",
-    "aLaCarteRestaurant": "A La Carte Restaurant",
+    "aLaCarteRestaurant": "Restaurant",
     "lobbyBar": "24h Lobby Bar",
     "airportTransfer": "Airport Transfer",
     "laundryService": "Laundry Service"
@@ -75,31 +75,46 @@
     "title":       "Deluxe Room FR",
     "description": "Spacious 20 m² Deluxe Room featuring a comfortable double bed, an en-suite shower cabin, and modern amenities for a relaxing stay.",
     "overview":    "Room size: 20 m²\nCapacity: Max. 2 adults\nBed type: Double bed\nBathroom: Shower cabin\nEntry: Electronic key card",
-    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers.",
+    "tourtitle": "Discover Our Comfortable and Stylish Rooms",
+"tourtext": "Whether you're traveling alone or with your family, we offer 5 different room options to meet every need. Experience the perfect blend of comfort and style in our rooms and enjoy the best vacation possible.",
+    "tourlink":"https://kuula.co/share/n1/collection/7bVFr"
   },
   "deluxe-room-tw": {
     "title":       "Deluxe Room TW",
     "description": "Cozy 20 m² Deluxe Room with two single beds, a private shower cabin, and all in-room conveniences for a comfortable stay.",
     "overview":    "Room size: 20 m²\nCapacity: Max. 2 adults\nBed type: 2 Single beds\nBathroom: Shower cabin\nEntry: Electronic key card",
-    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers.",
+"tourtitle": "Discover Our Comfortable and Stylish Rooms",
+"tourtext": "Whether you're traveling alone or with your family, we offer 5 different room options to meet every need. Experience the perfect blend of comfort and style in our rooms and enjoy the best vacation possible.",
+    "tourlink":"https://kuula.co/share/n1/collection/7bV9D"
   },
   "corner-room": {
     "title":       "Corner Room",
     "description": "Spacious 30 m² Corner Room featuring one double and one single bed, stylish design, and perfect comfort for families.",
     "overview":    "Room size: 30 m²\nCapacity: Max. 3 adults\nBed type: 1 Double + 1 Single bed\nBathroom: Shower cabin\nEntry: Electronic key card",
-    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers.",
+"tourtitle": "Discover Our Comfortable and Stylish Rooms",
+"tourtext": "Whether you're traveling alone or with your family, we offer 5 different room options to meet every need. Experience the perfect blend of comfort and style in our rooms and enjoy the best vacation possible.",
+    "tourlink":"https://kuula.co/share/n1/collection/7bVFY"
   },
   "jacuzzi-suite": {
     "title":       "Jacuzzi Suite",
     "description": "Luxurious 30 m² Jacuzzi Suite with a double bed, private jacuzzi, and premium amenities for an indulgent experience.",
     "overview":    "Room size: 30 m²\nCapacity: Max. 2 adults\nBed type: Double bed\nBathroom: Shower cabin + Jacuzzi\nEntry: Electronic key card",
-    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers.",
+"tourtitle": "Discover Our Comfortable and Stylish Rooms",
+"tourtext": "Whether you're traveling alone or with your family, we offer 5 different room options to meet every need. Experience the perfect blend of comfort and style in our rooms and enjoy the best vacation possible.",
+    "tourlink":"https://kuula.co/share/n1/collection/7bVKs"
   },
   "deluxe-single-room": {
     "title":       "Deluxe Single Room",
     "description": "Compact 10 m² Deluxe Single Room with one single bed and essential amenities, ideal for solo travelers seeking comfort.",
     "overview":    "Room size: 10 m²\nCapacity: Max. 1 adult\nBed type: Single bed\nBathroom: Shower cabin\nEntry: Electronic key card",
-    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers."
+    "features":    "Electronic key card, air conditioning, direct-dial telephone, Android TV, minibar, electronic safe, hair dryer, kettle, tea, Wi-Fi, towel set, slippers.",
+"tourtitle": "Discover Our Comfortable and Stylish Rooms",
+"tourtext": "Whether you're traveling alone or with your family, we offer 5 different room options to meet every need. Experience the perfect blend of comfort and style in our rooms and enjoy the best vacation possible.",
+    "tourlink":"https://kuula.co/share/n1/collection/7bVbW"
   }
 },
 

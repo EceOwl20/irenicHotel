@@ -62,13 +62,13 @@ export default function RoomCard() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="min-h-screen mt-10 lg:mt-36 bg-gray-50 p-1 lg:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-[94%] lg:w-8/12">
+      <div className="min-h-screen mt-10 lg:mt-36 bg-gray-50 p-1 lg:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10 w-[94%] lg:w-[80%] xl:w-[75%] max-w-[1200px]">
         {rooms.map((room) => (
           <div
             key={room.slug}
-            className="bg-white rounded-lg shadow-md overflow-hidden"
+            className="bg-white  shadow-md overflow-hidden"
           >
-            <div className="relative w-full h-64">
+            <div className="relative w-full h-64 lg:h-[40vh] lg:min-h-[300px] max-h-[340px]">
               <Image
                 src={room.image}
                 alt={room.name}
@@ -77,9 +77,9 @@ export default function RoomCard() {
               />
             </div>
             <div className="p-5">
-              <h3 className="text-xl font-montserrat font-semibold">{room.name}</h3>
+              <h3 className="text-xl xl:text-[24px] font-montserrat font-semibold">{room.name}</h3>
               <p className="text-gray-500 font-heebo text-sm mt-1 mb-4">{room.description}</p>
-              <button className="bg-black text-white font-heebo text-sm px-4 py-2 rounded hover:bg-gray-800">
+              <button className="bg-black text-white font-heebo text-sm px-4 py-2  hover:bg-gray-800">
               ${room.price}   {t("bookFrom")}
               </button>
               <div className="flex mt-5">
@@ -93,7 +93,7 @@ export default function RoomCard() {
                 </div>
                 <Link
                   href={`/rooms/${room.slug}`}
-                  className="text-sm lg:text-gray-600 font-heebo hover:text-white font-medium transition duration-300 bg-orange-500 text-white lg:bg-orange-100 hover:bg-orange-500 px-4 py-2 rounded-md shadow-sm"
+                  className="text-sm lg:text-[14px] lg:text-gray-600 font-heebo hover:text-white font-medium transition duration-300 bg-gray-200 text-white lg:bg-orange-100 hover:bg-[#ffa217] px-4 py-2 shadow-sm"
                 >
                   {t("moreInfo")}
                 </Link>

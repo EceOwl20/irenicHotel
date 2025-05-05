@@ -5,6 +5,8 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from './generalComponents/Header';
 import Footer from './generalComponents/Footer';
+import BookSection from './generalComponents/BookSection';
+import CookiePopup from './generalComponents/CookiePopup';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -36,7 +38,9 @@ export default async function RootLayout({ children, params }) {
       >
           <NextIntlClientProvider>
             <Header/>
-        {children}
+            <BookSection/>
+             {children}
+             <CookiePopup/>
             <Footer />        
         </NextIntlClientProvider>
       </body>

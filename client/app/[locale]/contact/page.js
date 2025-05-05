@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import img from "../../../public/general/irenicHotel.webp"
 
 const ContactPage = () => {
   const t = useTranslations('Contact');
@@ -13,7 +14,7 @@ const ContactPage = () => {
           {/* Arka plan görseli */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/general/irenicHotel.webp')" }} // kendi görsel yolun
+            style={{ backgroundImage: `url(${img.src})` }}
           ></div>
 
           {/* Overlay */}
@@ -103,16 +104,6 @@ const ContactPage = () => {
           className="w-full h-full border-0"
         ></iframe>
       </div>
-
-      {/* WhatsApp Butonu */}
-      <a
-        href="https://wa.me/905312345678"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg z-50 transition"
-      >
-        <FaWhatsapp className="text-2xl" />
-      </a>
     </div>
   );
 };

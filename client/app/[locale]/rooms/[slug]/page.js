@@ -2,6 +2,8 @@
 import { notFound } from 'next/navigation';
 import { subrooms } from '@/data/subrooms';
 import RoomDetailSection from '../../components/RoomDetailSection';
+import SubRoomBanner from '../../components/SubRoomBanner';
+import AmenitiesBar from '../../components/AmenitiesBar';
 
 // hangi slug’lar için page üreteceğimizi bildiriyoruz
 export async function generateStaticParams() {
@@ -26,5 +28,11 @@ export default function RoomPage({ params }) {
 
   // Burada **sadece** images’ı (ve istersen slug’ı) veriyoruz,
   // metinleri alacak olan Client bileşeni olacak:
-  return <RoomDetailSection slug={slug} images={roomData.images}  />;
+  return (
+    <div>
+      <SubRoomBanner slug={slug}/>
+      <AmenitiesBar/>
+      <RoomDetailSection slug={slug} images={roomData.images}  />
+    </div>
+  )
 }

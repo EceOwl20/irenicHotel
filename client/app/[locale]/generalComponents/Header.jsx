@@ -15,10 +15,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setIsOpaque(window.scrollY > window.innerHeight);
+    const onScroll = () => {
+      const sixtyVH = window.innerHeight * 0.7;
+      setIsOpaque(window.scrollY > sixtyVH);
+    };
+  
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+  
 
   return (
     <>
@@ -28,7 +33,7 @@ export default function Header() {
           fixed top-0 left-0 w-screen flex items-center justify-center
           h-[80px] lg:h-[102px] z-[999]
           transition-colors duration-300
-          ${isOpaque ? 'bg-irenicBlack' : 'bg-transparent shadow-2xs'}
+          ${isOpaque ? 'bg-irenicBlack' : 'bg-[#0f172b]/60 shadow-2xs'}
         `}
       >
         <div className="flex w-[90%] lg:w-[85%] max-w-[1200px] items-center justify-between">
