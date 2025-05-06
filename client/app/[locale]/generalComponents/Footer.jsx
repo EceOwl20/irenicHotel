@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:info@irenichotel.com" className="flex items-center gap-3 hover:text-white transition-colors">
+              <a href="mailto:callcenter@irenichotel.com" className="flex items-center gap-3 hover:text-white transition-colors">
                 <FaEnvelope className="text-lg" />
                 <span>{t("email")}</span>
               </a>

@@ -32,7 +32,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: `" Contact Form" <${process.env.SMTP_USER}>`, // Sabit gönderici adresi
-      to: 'info@irenichotel.com', // Hedef adres
+      to: 'callcenter@irenichotel.com', // Hedef adres
       replyTo: email || process.env.SMTP_USER, // Yanıtlanacak adres
       subject: 'Yeni İletişim Formu Mesajı',
       text: emailContent,

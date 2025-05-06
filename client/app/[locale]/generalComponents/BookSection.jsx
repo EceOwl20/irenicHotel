@@ -1,8 +1,10 @@
+"use client"
 import React from 'react';
 import { BiSolidPhoneCall } from "react-icons/bi";
 import MessageSection from "./MessageSection"
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import Link from 'next/link';
+import Script from 'next/script';
 
 const BookSection = () => {
   return (
@@ -23,7 +25,17 @@ const BookSection = () => {
         </a>
 
         <div className="flex">
-          <MessageSection />
+        <Script
+          src="https://cdn.livechat.connexease.com/embed.js"
+          strategy="afterInteractive"
+          onLoad={() => {
+            if (window.ConnexeaseWebMessenger) {
+              window.ConnexeaseWebMessenger.Init('188913a5-5fcf-4de1-b6a5-711e8fd4ea8e');
+            } else {
+              console.warn('ConnexeaseWebMessenger yüklenemedi.');
+            }
+          }}
+        />
         </div>
       </div>
     </div>
