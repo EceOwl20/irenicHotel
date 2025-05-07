@@ -17,11 +17,11 @@ export async function generateStaticParams() {
 }
 
 
-export default function RoomPage({ params }) {
+export default async function RoomPage({ params }) {
   // const t = useTranslations('subrooms');
   // const array=t(".overview")
 
-  const { slug } = params;
+  const { slug } = await params;
   const roomData = subrooms.find((r) => r.slug === slug);
   if (!roomData) return notFound();
   

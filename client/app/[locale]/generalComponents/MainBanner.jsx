@@ -17,7 +17,7 @@ const MainBanner = () => {
         playsInline
         className=" top-0 left-0 w-full h-full object-cover hidden lg:flex relative">
         <source 
-          src="/videos/irenicanasayfa.mp4"
+          src="/videos/irenic.mp4"
           type="video/mp4"
         />
         Tarayıcınız bu videoyu desteklemiyor.
@@ -32,7 +32,7 @@ const MainBanner = () => {
         className="absolute top-0 left-0 w-full h-full object-cover flex lg:hidden"
       >
         <source 
-          src="/videos/irenicanasayfa.mp4"
+          src="/videos/irenic.mp4"
           type="video/mp4"
         />
         Tarayıcınız bu videoyu desteklemiyor.
