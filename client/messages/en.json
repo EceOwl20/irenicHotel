@@ -214,6 +214,16 @@
       "text3":"Start your day with a rich breakfast included in your stay, every morning.",
       "buttonText":"Read More"
     }
-  }
+  },
+
+  "ServicesPage": {
+      "header": "Services",
+      "title1": "Pool",
+      "text1": "Outdoor swimming pool, 15 m², 160 cm depth, operating hours 08:00–18:00.",
+      "title2": "Buffet",
+      "text2": "A la carte restaurant, open 08:00–22:00.",
+      "title3": "Lobby Bar",
+      "text3": "Hot, cold and alcoholic beverages available. Open 24 hours."
+    }
   
 }

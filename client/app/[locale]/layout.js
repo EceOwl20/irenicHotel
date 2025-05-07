@@ -23,6 +23,12 @@ const heebo = Heebo({
 export const metadata = {
   title: "Irenic Hotel",
   description: "Irenic Hotel",
+
+  icons: {
+    icon: '/irenicLogo.png',      
+    shortcut: '/irenicLogo.png',  // bazen ek kısayol desteği için
+    apple: '/irenicLogo.png'      // iOS ana ekran ikonu
+  }
 };
 
 export default async function RootLayout({ children, params }) {

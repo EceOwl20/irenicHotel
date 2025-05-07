@@ -79,9 +79,7 @@ export default function RoomCard() {
             <div className="p-5">
               <h3 className="text-xl xl:text-[24px] font-montserrat font-semibold">{room.name}</h3>
               <p className="text-gray-500 font-heebo text-sm mt-1 mb-4">{room.description}</p>
-              <button className="bg-black text-white font-heebo text-sm px-4 py-2  hover:bg-gray-800">
-              ${room.price}   {t("bookFrom")}
-              </button>
+           
               <div className="flex mt-5">
                 <div className="flex w-full bg-gray-500 h-[0.1px]"></div>
               </div>
@@ -93,7 +91,7 @@ export default function RoomCard() {
                 </div>
                 <Link
                   href={`/rooms/${room.slug}`}
-                  className="text-sm lg:text-[14px] lg:text-gray-600 font-heebo hover:text-white font-medium transition duration-300 bg-gray-200 text-white lg:bg-orange-100 hover:bg-[#ffa217] px-4 py-2 shadow-sm"
+                  className="text-sm lg:text-[14px]  font-heebo text-white font-medium transition duration-300 hover:bg-[#0f172b] hover:text-white bg-[#ffa217] px-4 py-2 shadow-sm"
                 >
                   {t("moreInfo")}
                 </Link>

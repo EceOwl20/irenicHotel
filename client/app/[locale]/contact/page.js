@@ -2,6 +2,7 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import img from "../../../public/general/irenicHotel.webp"
+import SubBanner from '../generalComponents/SubBanner';
 
 const ContactPage = () => {
   const t = useTranslations('Contact');
@@ -10,34 +11,18 @@ const ContactPage = () => {
     <div className="bg-white min-h-screen">
       {/* Başlık kısmı ve map kısmı burada olsun, yukarıdaki örneği dahil et */}
         {/* Başlık Bölgesi - Arka Planlı */}
-        <div className="relative w-full h-[60vh] mb-12">
-          {/* Arka plan görseli */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${img.src})` }}
-          ></div>
-
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-
-          {/* Başlık */}
-          <div className="relative z-10 flex items-center justify-center h-full px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-white font-montserrat text-center">
-           {t("headerTitle")}
-            </h1>
-          </div>
-        </div>
+       <SubBanner img={img} header={t("headerTitle")}/>
       {/* Harita + Bilgiler */}
       <div className="px-4 sm:px-6 md:px-16 pb-24 mt-12">
-        <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start ">
           {/* Sol: İletişim Bilgileri */}
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold font-montserrat text-irenicBlack">{t("subtitle")}</h2>
+          <div className="flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-start space-y-6">
+            <h2 className="text-[25px] lg:text-3xl font-bold font-montserrat text-irenicBlack">{t("subtitle")}</h2>
             <p className="text-gray-600 text-base font-heebo">
             {t("getInTouchDesc")}
             </p>
 
-            <div className="space-y-4 text-gray-700 text-sm font-heebo">
+            <div className="space-y-4 text-gray-700 text-sm font-heebo flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-start">
               <div className="flex items-start gap-4">
                 <FaMapMarkerAlt className="text-xl text-irenicBlack mt-1" />
                 <span>{t("addressValue2")}</span>
@@ -62,22 +47,22 @@ const ContactPage = () => {
           </div>
 
           {/* Sağ: İletişim Formu */}
-          <form className="space-y-5">
-            <div>
+          <form className="flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-start w-full space-y-5">
+            <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formNameLabel")}</label>
               <input
                 type="text"
-                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
+                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none "
               />
             </div>
-            <div>
+            <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formEmailLabel")}</label>
               <input
                 type="email"
                 className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
               />
             </div>
-            <div>
+            <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formMessageLabel")}</label>
               <textarea
                 rows={5}

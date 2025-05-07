@@ -24,7 +24,7 @@ const BookSection = () => {
           Book Now
         </a>
 
-        <div className="flex">
+        <div className="flex mt-[100px] md:mt-0">
         <Script
           src="https://cdn.livechat.connexease.com/embed.js"
           strategy="afterInteractive"
