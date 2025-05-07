@@ -25,7 +25,7 @@ export default function AmenitiesBar() {
 
   return (
     <div className="w-full bg-irenicBlack text-white py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:flex justify-center items-center text-center gap-x-16 gap-y-2 lg:gap-y-3 pl-2">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:flex justify-center items-center text-center gap-x-16 gap-y-5 lg:gap-y-3 px-2">
         {amenities.map(({ label, Icon }) => (
           <div key={label} className="flex flex-col items-center gap-2 md:gap-4 lg:gap-6">
             <Icon className="w-6 h-6" />

@@ -216,6 +216,16 @@
     "text3": "Beginnen Sie Ihren Tag mit einem reichhaltigen Frühstück, das jeden Morgen im Aufenthalt inbegriffen ist.",
     "buttonText": "Mehr Lesen"
   }
+  },
+
+  "ServicesPage": {
+    "header": "Leistungen",
+    "title1": "Pool",
+    "text1": "Freiluft-Schwimmbad, 15 m², 160 cm Tiefe, Öffnungszeiten 08:00–18:00.",
+    "title2": "Buffet",
+    "text2": "À-la-carte-Restaurant, Öffnungszeiten 08:00–22:00.",
+    "title3": "Lobby-Bar",
+    "text3": "Heiße, kalte und alkoholische Getränke verfügbar. 24 Stunden geöffnet."
   }
 
 }

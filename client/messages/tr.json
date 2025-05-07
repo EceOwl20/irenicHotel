@@ -219,6 +219,16 @@
       "text3": "Her sabah konaklamanıza dahil zengin bir kahvaltı ile güne başlayın.",
       "buttonText": "Daha Fazla Oku"
     }
+  },
+
+  "ServicesPage": {
+    "header": "Hizmetler",
+    "title1": "Havuz",
+    "text1": "Açık Yüzme Havuzu, 15 m², 160 cm derinlik, çalışma saatleri 08:00–18:00.",
+    "title2": "Açık Büfe",
+    "text2": "A la carte Restoran, çalışma saatleri 08:00–22:00 arası.",
+    "title3": "Lobi Bar",
+    "text3": "Sıcak, soğuk ve alkollü içecekler mevcuttur. 24 saat açıktır."
   }
 
 }

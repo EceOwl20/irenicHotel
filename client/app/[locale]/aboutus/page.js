@@ -3,6 +3,7 @@ import React from 'react';
 import {useTranslations} from 'next-intl';
 import FeatureSection from './section/FeatureSection';
 import img from "../../../public/general/irenicHotel.webp"
+import SubBanner from '../generalComponents/SubBanner';
 
 const AboutPage = () => {
   const t = useTranslations('About');
@@ -10,23 +11,7 @@ const AboutPage = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* Başlık Bölgesi - Arka Planlı */}
-      <div className="relative w-full h-[60vh] mb-12">
-        {/* Arka plan görseli */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${img.src})` }}
-        ></div>
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        {/* Başlık */}
-        <div className="relative z-10 flex items-center justify-center h-full px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white font-montserrat text-center">
-            About Us
-          </h1>
-        </div>
-      </div>
+    <SubBanner img={img} header="About Us"/>
 
       {/* Açıklama Alanı */}
       <div className="px-4 sm:px-6 md:px-16 pb-12">

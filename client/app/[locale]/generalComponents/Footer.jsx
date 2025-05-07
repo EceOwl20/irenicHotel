@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-irenicBlack text-white font-heebo">
-      <div className="container mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="container mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center justify-center text-center lg:items-start lg:justify-start lg:text-start">
         
         {/* Column 1 - Hotel Info */}
         <div>
@@ -29,9 +29,9 @@ const Footer = () => {
         </div>
 
         {/* Column 2 - Contact */}
-        <div>
+        <div className='flex flex-col items-center justify-center lg:items-start lg:justify-start'>
           <h4 className="font-montserrat text-xl mb-4"> {t("contactTitle")}</h4>
-          <ul className="space-y-4 text-gray-300">
+          <ul className="flex flex-col items-center justify-center lg:items-start lg:justify-start space-y-4 text-gray-300">
             <li>
               <Link
                 href="https://www.google.com/maps?q=Irenic+Hotel+Antalya"
@@ -60,7 +60,7 @@ const Footer = () => {
         {/* Column 3 - Quick Links + Social */}
         <div>
           <h4 className="font-montserrat text-xl mb-4">{t("quickLinksTitle")}</h4>
-          <ul className="space-y-3 text-gray-300 mb-6">
+          <ul className="space-y-3 text-gray-300 mb-6 ">
           {/* , t("about"), t("contact"), t("reservation") */}
               <li >
                 <Link
@@ -101,19 +101,19 @@ const Footer = () => {
               </li>
            
           </ul>
-          <div className="flex space-x-4">
+          <div className="flex items-center justify-center lg:items-start lg:justify-start space-x-4">
             <a href="https://www.facebook.com/irenichotel"  target="_blank"
-        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaFacebookF /></a>
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaFacebookF size={20}/></a>
             <a href="https://www.instagram.com/hotelirenic/"  target="_blank"
-        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaInstagram /></a>
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaInstagram size={20}/></a>
             <a href="https://www.tripadvisor.com.tr/Hotel_Review-g297962-d27423172-Reviews-Irenic_Hotel-Antalya_Turkish_Mediterranean_Coast.html"  target="_blank"
-        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaTripadvisor size={20} /></a>
+        rel="noopener noreferrer" className="hover:text-white transition-colors"><FaTripadvisor size={22} /></a>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm font-heebo">
+      <div className="border-t border-gray-700 lg:mt-12 pt-4 lg:pt-6 text-center text-gray-400 text-sm font-heebo">
         <p>© {new Date().getFullYear()} Irenic Hotel. All rights reserved.</p>
         <div className="pt-1 pb-3 items-center justify-center flex">
           Powered by{' '} 
