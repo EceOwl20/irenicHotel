@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* Başlık Bölgesi - Arka Planlı */}
-    <SubBanner img={img} header="About Us"/>
+    <SubBanner img={img} header={t("aboutus")}/>
 
       {/* Açıklama Alanı */}
       <div className="px-4 sm:px-6 md:px-16 pb-12">
