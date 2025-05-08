@@ -65,12 +65,12 @@ const SlidingCarouselSection = ({
           <p className="text-sm md:text-base font-heebo text-irenicGray">
             {text}
           </p>
-          <Link
+          {/* <Link
             href="/rooms"
             className="inline-block bg-irenicBlack text-white uppercase text-sm md:text-base py-2 px-4 hover:bg-[#FEA116] transition"
           >
             {buttonText}
-          </Link>
+          </Link> */}
         </div>
       </div>
 

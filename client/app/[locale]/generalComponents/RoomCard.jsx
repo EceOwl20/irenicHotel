@@ -38,7 +38,7 @@ export default function RoomCard() {
       slug: "corner-room",
       name: t("cornerRoomName"),
       description: t("cornerRoomDescription"),
-      image: "/images/deluxecorner/IRN-CORNER2.webp",
+      image: "/images/deluxeCorner/IRN-CORNER2.webp",
       price: 130,
       icons: [FaBed, FaUserFriends, FaExpandArrowsAlt, FaWifi],
     },
