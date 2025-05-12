@@ -20,6 +20,11 @@ const heebo = Heebo({
   display: 'swap',
 })
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+
 export const metadata = {
   title: "Irenic Hotel",
   description: "Irenic Hotel",
@@ -31,11 +36,17 @@ export const metadata = {
   }
 };
 
+
+
 export default async function RootLayout({ children, params }) {
-  const {locale} = await params;
+  const { locale } = await params
+
   if (!hasLocale(routing.locales, locale)) {
-    notFound();
+    notFound()
   }
+
+  // 2) Dil dosyalarını dinamik import et
+  const messages = (await import(`../../messages/${locale}.json`)).default
 
   return (
     <html lang={locale}>
