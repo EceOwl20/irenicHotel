@@ -1,12 +1,12 @@
 import {defineRouting} from 'next-intl/routing';
  
-export const routing = defineRouting({
+export const config = {
   // A list of all locales that are supported
   locales: ['tr', 'en','de', 'ru', 'ae'],
  
   // Used when no locale matches
   defaultLocale: 'tr',
-  localeDetection: false,
+  localeDetection: true,
   localePrefix : "always",
   pathnames : {
     '/': {
@@ -85,4 +85,5 @@ export const routing = defineRouting({
       ae: '/services',
     },
 
-  }})
+  }};
+  export const routing = defineRouting(config);

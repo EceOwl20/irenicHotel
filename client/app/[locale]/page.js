@@ -25,8 +25,6 @@ const slidingTitle2 = t('slidingSections.second.title')
 const slidingText2 = t('slidingSections.second.text')
 const slidingButton2 = t('slidingSections.second.button')
 
-
-
   return (
     <div className="flex flex-col overflow-hidden gap-[40px] md:gap-[70px] lg:gap-[90px]">
       <MainCarousel/>
