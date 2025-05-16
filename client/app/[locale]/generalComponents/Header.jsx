@@ -8,11 +8,14 @@ import logo from '@/public/images/irenicLogo.png';
 import { useTranslations } from 'next-intl';
 import { LiaTimesSolid, LiaBarsSolid } from "react-icons/lia";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const t = useTranslations('Header');
   const [isOpaque, setIsOpaque] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => {
