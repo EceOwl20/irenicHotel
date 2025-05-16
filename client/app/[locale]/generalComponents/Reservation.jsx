@@ -345,7 +345,8 @@ export default function Reservation() {
         </div>
 
         {/* SEARCH BUTTON */}
-        <Link href="https://irenic.rezervasyonal.com/">
+        <Link href="https://irenic.rezervasyonal.com/" target="_blank"
+        rel="noopener noreferrer">
           <button
             onClick={() => console.log("Final Guest Information:", guestInfo)}
             className="

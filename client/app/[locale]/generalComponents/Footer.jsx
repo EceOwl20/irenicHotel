@@ -120,6 +120,7 @@ const Footer = () => {
           <a
             href="https://dgtlface.com"
             target="_blank"
+        rel="noopener noreferrer"
             className="text-white font-semibold hover:underline"
           >{" "}
             <DgtlfaceSvg className="flex" width={104} height={27} />
