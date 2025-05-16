@@ -33,6 +33,10 @@ export const metadata = {
   }
 };
 
+// app/[locale]/layout.js
+export function generateStaticParams() {
+  return ['tr','en','de','ru','ae'].map(locale => ({ locale }));
+}
 
 
 export default async function RootLayout({ children, params }) {
