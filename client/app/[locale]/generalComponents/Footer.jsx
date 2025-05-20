@@ -8,7 +8,7 @@ import {
   FaTwitter,
   FaTripadvisor
 } from 'react-icons/fa';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import DgtlfaceSvg from './DgtlfaceSvg';
 import {useTranslations} from 'next-intl';
 
