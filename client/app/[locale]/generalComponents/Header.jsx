@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import LangSwitcher from '@/LangSwitcher';
 import logo from '@/public/images/irenicLogo.png';
 import { useTranslations } from 'next-intl';

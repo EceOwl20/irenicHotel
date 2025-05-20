@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import {useTranslations} from 'next-intl';
 import img1 from "../../../public/images/kahvaltı-bar/IRN-HAVALTI2.webp";
 import img2 from "../../../public/images/kahvaltı-bar/IRN-HAVALTI3.webp";

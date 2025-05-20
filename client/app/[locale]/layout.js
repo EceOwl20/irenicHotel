@@ -1,7 +1,7 @@
 import { Heebo, Montserrat, Roboto } from 'next/font/google'
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server'   // ← setRequestLocale ekledik
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from './generalComponents/Header';
@@ -45,7 +45,11 @@ export default async function RootLayout({ children, params }) {
     notFound();
   }
 
-  const messages = await getMessages();
+   // 1) Gelen locale bilgisini Next Intl’in store’una yazıyoruz
+   setRequestLocale(locale)
+  
+    // 2) Ardından mesajları yükleyip client’a iletebiliriz
+    const messages = await getMessages()
 
   return (
     <html lang={locale}>

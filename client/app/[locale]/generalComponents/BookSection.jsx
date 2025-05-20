@@ -3,7 +3,7 @@ import React from 'react';
 import { BiSolidPhoneCall } from "react-icons/bi";
 import MessageSection from "./MessageSection"
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import Script from 'next/script';
 
 const BookSection = () => {

@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 
 const SlidingImageSection = ({ isReversed, title,text,buttonText,img }) => {
   const [animate, setAnimate] = useState(false);

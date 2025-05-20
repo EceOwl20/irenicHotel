@@ -1,32 +1,32 @@
-import { useTransition, useEffect, useRef } from "react";
-import { useRouter, usePathname } from "next/navigation";
-import React, { useState } from "react";
+"use client";
+
+import React, { useState, useEffect, useTransition } from "react";
+// ⭐️ next/navigation yerine navigation.ts’den alıyoruz:
+import { redirect, usePathname } from "@/i18n/navigation";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function LocaleSwitcherSelect({ children, defaultValue, label }) {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   const [isPending, startTransition] = useTransition();
-  const pathname = usePathname();
+  // 🔑 burada internal rota anahtarını (ör: "/aboutus") alır
+  const routeKey = usePathname();
 
-  // Sayfa yüklendiğinde scroll konumunu sessionStorage’dan oku
   useEffect(() => {
-    const savedScroll = sessionStorage.getItem("scrollPosition");
-    if (savedScroll) {
-      window.scrollTo(0, Number(savedScroll));
+    const saved = sessionStorage.getItem("scrollPosition");
+    if (saved) {
+      window.scrollTo(0, Number(saved));
       sessionStorage.removeItem("scrollPosition");
     }
-  }, [pathname]);
+  }, [routeKey]);
 
   function handleLangChange(lang) {
-    // Mevcut scroll pozisyonunu sessionStorage’da sakla
+    // scroll pozisyonunu sakla
     sessionStorage.setItem("scrollPosition", window.scrollY);
-    
     setIsOpen(false);
+
     startTransition(() => {
-      const currentLocale = pathname.split('/')[1];
-      const newPathname = pathname.replace(`/${currentLocale}`, `/${lang}`);
-      router.replace(newPathname);
+      // Next-Intl’in redirect’i ile doğru URL’e (ör: "/de/uber-uns") yönlendirir
+      redirect({ href: routeKey, locale: lang });
     });
   }
 
@@ -34,9 +34,10 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }) 
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent uppercase w-full text-[16px] font-montserrat">
-        {defaultValue}
-        <IoMdArrowDropdown color="#ffa217"/>
+        className="flex flex-row items-center justify-center gap-2 rounded-md px-[10px] py-[10px] lg:py-4 font-medium mix-blend-difference bg-transparent uppercase w-full text-[16px] font-montserrat"
+      >
+        {label}
+        <IoMdArrowDropdown color="#ffa217" />
       </button>
       {isOpen && (
         <div className="absolute z-50 mt-0 rounded bg-irenicBlack shadow-lg left-0 w-full ">
@@ -50,7 +51,6 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }) 
                   onClick={() => handleLangChange(child.props.value)}
                 >
                   {child.props.value}
-                  
                 </li>
               );
             })}
