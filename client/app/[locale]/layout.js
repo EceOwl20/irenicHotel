@@ -1,6 +1,6 @@
 import { Heebo, Montserrat, Roboto } from 'next/font/google'
 import "../globals.css";
-import {NextIntlClientProvider, Locale, hasLocale} from 'next-intl';
+import {NextIntlClientProvider} from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
@@ -33,9 +33,8 @@ export const metadata = {
   }
 };
 
-// app/[locale]/layout.js
 export function generateStaticParams() {
-  return ['tr','en','de','ru','ae'].map(locale => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 
