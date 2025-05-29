@@ -72,6 +72,40 @@ export default async function RootLayout({ children, params }) {
             });
           `}
         </Script>
+
+
+
+
+          {/* Chat script'i sabit olarak layout'ta bırakıyoruz */}
+          <script 
+          src="https://cdn.livechat.connexease.com/embed.js" 
+          async 
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Chat'i ilk yüklemede başlat
+              document.addEventListener('DOMContentLoaded', function() {
+                function initChat() {
+                  if (window.ConnexeaseWebMessenger && window.ConnexeaseWebMessenger.Init) {
+                    try {
+                      window.ConnexeaseWebMessenger.Init('188913a5-5fcf-4de1-b6a5-711e8fd4ea8e', {
+                        position: 'bottom-right'
+                      });
+                      console.log('Initial chat loaded');
+                    } catch (error) {
+                      console.error('Initial chat load error:', error);
+                    }
+                  } else {
+                    setTimeout(initChat, 500);
+                  }
+                }
+                
+                setTimeout(initChat, 1000);
+              });
+            `
+          }}
+        />
       </head>
       <body
         className={`${montserrat.variable} ${heebo.variable} antialiased`}
