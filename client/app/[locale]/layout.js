@@ -8,6 +8,7 @@ import Header from './generalComponents/Header';
 import Footer from './generalComponents/Footer';
 import BookSection from './generalComponents/BookSection';
 import CookiePopup from './generalComponents/CookiePopup';
+import Script from 'next/script';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -53,6 +54,25 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale}>
+       <head>
+        {/* 1) gtag.js kütüphanesini yükleyin */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        />
+
+        {/* 2) Google Tag yapılandırmasını yapın */}
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config','${process.env.NEXT_PUBLIC_GA_ID}',{
+              page_path: window.location.pathname
+            });
+          `}
+        </Script>
+      </head>
       <body
         className={`${montserrat.variable} ${heebo.variable} antialiased`}
       >
