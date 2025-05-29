@@ -41,40 +41,40 @@ export const config = {
     },
 
    '/rooms/deluxe-room-fr': {
-      tr: '/odalar/deluxe-room-fr',
-      en: '/rooms/deluxe-room-fr',
-      de: '/zimmer/deluxe-room-fr',
-      ru: '/nomera/deluxe-room-fr',
-      ae: '/rooms/deluxe-room-fr'
-    },
-    '/rooms/deluxe-room-tw': {
-      tr: '/odalar/deluxe-room-tw',
-      en: '/rooms/deluxe-room-tw',
-      de: '/zimmer/deluxe-room-tw',
-      ru: '/nomera/deluxe-room-tw',
-      ae: '/rooms/deluxe-room-tw'
-    },
-    '/rooms/corner-room': {
-      tr: '/odalar/corner-room',
-      en: '/rooms/corner-room',
-      de: '/zimmer/corner-room',
-      ru: '/nomera/corner-room',
-      ae: '/rooms/corner-room'
-    },
-    '/rooms/jacuzzi-suite': {
-      tr: '/odalar/jacuzzi-suite',
-      en: '/rooms/jacuzzi-suite',
-      de: '/zimmer/jacuzzi-suite',
-      ru: '/nomera/jacuzzi-suite',
-      ae: '/rooms/jacuzzi-suite'
-    },
-    '/rooms/deluxe-single-room': {
-      tr: '/odalar/deluxe-single-room',
-      en: '/rooms/deluxe-single-room',
-      de: '/zimmer/deluxe-single-room',
-      ru: '/nomera/deluxe-single-room',
-      ae: '/rooms/deluxe-single-room'
-    },
+    tr: '/odalar/luks-oda-fr',
+    en: '/rooms/deluxe-room-fr',
+    de: '/zimmer/deluxe-zimmer-fr',
+    ru: '/nomera/люкс-номер-fr',
+    ae: '/rooms/deluxe-room-fr'
+  },
+  '/rooms/deluxe-room-tw': {
+    tr: '/odalar/luks-oda-tw',
+    en: '/rooms/deluxe-room-tw',
+    de: '/zimmer/deluxe-zimmer-tw',
+    ru: '/nomera/люкс-номер-tw',
+    ae: '/rooms/deluxe-room-tw'
+  },
+  '/rooms/corner-room': {
+    tr: '/odalar/kose-oda',
+    en: '/rooms/corner-room',
+    de: '/zimmer/eckzimmer',
+    ru: '/nomera/угловой-номер',
+    ae: '/rooms/corner-room'
+  },
+  '/rooms/jacuzzi-suite': {
+    tr: '/odalar/jakuzi-suit',
+    en: '/rooms/jacuzzi-suite',
+    de: '/zimmer/jacuzzi-suite',
+    ru: '/nomera/джакузи-сьют',
+    ae: '/rooms/jacuzzi-suite'
+  },
+  '/rooms/deluxe-single-room': {
+    tr: '/odalar/luks-tek-kisilik-oda',
+    en: '/rooms/deluxe-single-room',
+    de: '/zimmer/deluxe-einzelzimmer',
+    ru: '/nomera/люкс-одноместный-номер',
+    ae: '/rooms/deluxe-single-room'
+  },
   
     '/services': {
       tr: '/hizmetler',
