@@ -1,4 +1,6 @@
-import React from 'react';
+
+"use client"
+import React, {useState} from 'react';
 import {useTranslations} from 'next-intl';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import img from "../../../public/general/irenicHotel.webp"
@@ -6,6 +8,73 @@ import SubBanner from '../generalComponents/SubBanner';
 
 const ContactPage = () => {
   const t = useTranslations('Contact');
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    policyAccepted: false, 
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+    setSuccess(false);
+
+    try {
+      if (!formData.policyAccepted) {
+        throw new Error("Lütfen gizlilik politikasını kabul edin");
+      }
+
+      const messageContent = `
+      Hello! My name is ${formData.name}
+      For communication: ${formData.email}
+      Message: ${formData.message}
+      We thank you.
+    `;
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: messageContent,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Gönderim başarısız oldu");
+      }
+
+      setSuccess(true);
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        policyAccepted: false,
+      });
+    } catch (err) {
+      setError(err.message || "Bir hata oluştu, lütfen tekrar deneyin");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="bg-white min-h-screen">
@@ -47,28 +116,59 @@ const ContactPage = () => {
           </div>
 
           {/* Sağ: İletişim Formu */}
-          <form className="flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-start w-full space-y-5">
+          <form onSubmit={handleFormSubmit} className="flex flex-col items-center justify-center text-center lg:items-start lg:justify-start lg:text-start w-full space-y-5">
             <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formNameLabel")}</label>
               <input
-                type="text"
-                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none "
+                 id="fullName"
+                 name="name"
+                 type="text"
+                 placeholder="Name"
+                 value={formData.name}
+                 onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none placeholder:text-gray-300"
               />
             </div>
             <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formEmailLabel")}</label>
               <input
+                id="email"
+                name="email"
                 type="email"
-                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none placeholder:text-gray-300"
               />
             </div>
             <div className='flex flex-col w-full text-start'>
               <label className="block text-sm font-medium text-gray-700"> {t("formMessageLabel")}</label>
               <textarea
-                rows={5}
-                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none"
+               id="message"
+               name="message"
+               rows="4"
+               placeholder="Message"
+               value={formData.message}
+               onChange={handleChange}
+                className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-irenicBlack outline-none placeholder:text-gray-300"
               ></textarea>
             </div>
+               {/* Checkbox */}
+          <div className="flex w-[90%] items-center justify-center">
+            <input
+              type="checkbox"
+              name="policyAccepted"
+              checked={formData.policyAccepted}
+              onChange={handleChange}
+              className="h-4 w-4 border border-gray-300 rounded mr-2 mt-4"
+            />
+            <label
+              htmlFor="policyAccepted"
+              className="text-[12px] lg:text-[14px] text-gray-600 mt-[18px] lg:mt-[24px]"
+            >
+             İsim, e-posta ve web sitemi bu tarayıcıda bir sonraki yorumum için kaydet.
+            </label>
+          </div>
             <button
               type="submit"
               className="bg-irenicBlack text-white px-6 py-2 rounded-md hover:bg-black transition"

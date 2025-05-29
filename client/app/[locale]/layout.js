@@ -1,7 +1,7 @@
 import { Heebo, Montserrat, Roboto } from 'next/font/google'
 import "../globals.css";
 import {NextIntlClientProvider} from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server'   // ← setRequestLocale ekledik
+import { getMessages, setRequestLocale } from 'next-intl/server'  
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Header from './generalComponents/Header';
