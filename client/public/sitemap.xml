@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Ana sayfa -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/" />
+  </url>
+
+  <!-- About Us / Hakkımızda / Über Uns / О нас -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/hakkimizda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/hakkimizda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/uber-uns" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/o-nas" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/about" />
+  </url>
+
+  <!-- Contact / İletişim / Kontakt -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/iletisim</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/iletisim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/kontakt" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/kontakt" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/contact" />
+  </url>
+
+  <!-- Rooms / Odalar / Zimmer / Номера -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms" />
+  </url>
+
+  <!-- Deluxe Room (FR) -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar/luks-oda-fr</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar/luks-oda-fr" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms/deluxe-room-fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer/deluxe-zimmer-fr" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera/люкс-номер-fr" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms/deluxe-room-fr" />
+  </url>
+
+  <!-- Deluxe Room (TW) -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar/luks-oda-tw</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar/luks-oda-tw" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms/deluxe-room-tw" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer/deluxe-zimmer-tw" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera/люкс-номер-tw" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms/deluxe-room-tw" />
+  </url>
+
+  <!-- Corner Room / Köşe Oda / Eckzimmer / Угловой Номер -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar/kose-oda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar/kose-oda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms/corner-room" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer/eckzimmer" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera/угловой-номер" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms/corner-room" />
+  </url>
+
+  <!-- Jacuzzi Suite / Jakuzi Süit / Jacuzzi-Suite / Джакузи-Сьют -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar/jakuzi-suit</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar/jakuzi-suit" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms/jacuzzi-suite" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer/jacuzzi-suite" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera/джакузи-сьют" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms/jacuzzi-suite" />
+  </url>
+
+  <!-- Deluxe Single Room / Lüks Tek Kişilik Oda / Deluxe Einzelzimmer / Люкс Одноместный Номер -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/odalar/luks-tek-kisilik-oda</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/odalar/luks-tek-kisilik-oda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/rooms/deluxe-single-room" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/zimmer/deluxe-einzelzimmer" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/nomera/люкс-одноместный-номер" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/rooms/deluxe-single-room" />
+  </url>
+
+  <!-- Services / Hizmetler / Leistungen / Услуги -->
+  <url>
+    <loc>https://www.irenichotel.com/tr/hizmetler</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.irenichotel.com/tr/hizmetler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.irenichotel.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.irenichotel.com/de/leistungen" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.irenichotel.com/ru/uslugi" />
+    <xhtml:link rel="alternate" hreflang="ae" href="https://www.irenichotel.com/ae/services" />
+  </url>
+</urlset>
