@@ -8,6 +8,7 @@ import ServicesSection from './generalComponents/ServicesSection';
 import ContactSection from './generalComponents/ContactSection';
 import img1 from '@/public/images/frenchroom/IRN-DELUXEFRENCHROOM4.webp'
 import img2 from '@/public/images/jakuzi/IRN-JAKUZI.webp'
+import BookingPlatforms from './generalComponents/BookingPlatforms';
 
 export default function Home() {
   const t = useTranslations('Homepage');
@@ -35,6 +36,7 @@ const slidingButton2 = t('slidingSections.second.button')
      <GridSection/>
      </div>
      <ServicesSection/>
+     <BookingPlatforms/>
      <ContactSection/>
     </div>
   );

@@ -49,7 +49,8 @@
       "guests": "Гости",
       "search": "Поиск",
       "adult":"Взрослые",
-      "children":"Дети"
+      "children":"Дети",
+       "bookingPlatforms":"Платформы бронирования"
     },
 
 "subrooms": {

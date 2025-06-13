@@ -48,7 +48,8 @@
       "guests": "الضيوف",
       "search": "احجز الآن",
       "adult": "بالغ",
-      "children": "أطفال"
+      "children": "أطفال",
+       "bookingPlatforms":" منصات الحجز"
     },
   
     "subrooms": {
