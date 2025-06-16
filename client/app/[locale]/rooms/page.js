@@ -5,6 +5,7 @@ import RoomCard from '../generalComponents/RoomCard.jsx';
 import {useTranslations} from 'next-intl';
 import img from "@/public/rooms/jacuzzi/jacuzzi1.webp"
 import img2 from "./images/bannerfoto.webp"
+import BookingPlatforms from '../generalComponents/BookingPlatforms.jsx';
 
 const Page = () => {
   const t = useTranslations('Rooms');
@@ -39,6 +40,10 @@ const Page = () => {
       <div className="relative z-10 -mt-8 sm:-mt-10 p-4 sm:p-6 md:p-10 bg-white">
       <RoomCard />
       </div>
+
+     <div className='py-10 lg:py-16'>
+       <BookingPlatforms/>
+     </div>
       
     </div>
   );
