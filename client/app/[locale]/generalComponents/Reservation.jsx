@@ -140,7 +140,7 @@ export default function Reservation() {
         <Link href={getReservationUrl()} target="_blank" rel="noopener noreferrer">
           <button
             type="button"
-            className="flex px-[47px] py-[10px] text-white bg-irenicOrange uppercase font-heebo max-w-[155px]"
+            className="flex px-[47px] py-[10px] text-white bg-irenicOrange uppercase font-heebo max-w-[155px] whitespace-nowrap text-center items-center justify-center"
           >
             {t("search")}
           </button>

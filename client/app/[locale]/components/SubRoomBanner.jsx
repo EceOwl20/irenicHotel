@@ -19,7 +19,7 @@ const SubRoomBanner = ({slug}) => {
       ></div>
 
       {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/40 text-center px-4 sm:px-6 md:px-8">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/35 text-center px-4 sm:px-6 md:px-8">
         <h1 className="text-white font-montserrat text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
         {title}
         </h1>
